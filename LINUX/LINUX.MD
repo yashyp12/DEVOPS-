@@ -122,11 +122,4 @@
 
 ---
 
-## Tips
-
-- Use `man <command>` for manual pages (Linux/macOS).
-- Use `--help` with most commands for quick flags, e.g., `ls --help`.
-- Prefer `sudo` only when necessary.
-- For scripting, prefer `set -euo pipefail` in Bash scripts to catch errors early.
-
----
+ 
