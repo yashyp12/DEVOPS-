@@ -12,6 +12,20 @@
 
 ---
 
+## PATH Environment Variable
+
+- Definition: A list of directories the shell searches for executable commands.
+- Purpose:
+  - Run commands without typing the full path
+  - Search directories from left to right
+- Useful commands:
+  - `echo $PATH` — view PATH
+  - `which git` — find Git executable
+  - `which python3` — find Python executable
+  - `which ls` — find `ls` executable
+
+---
+
 ## Shell
 
 - Definition: Command-line interpreter that reads commands and runs them.
