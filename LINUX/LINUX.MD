@@ -1,139 +1,562 @@
+# 🐧 Linux Fundamentals
 
-
-## Terminal
-
-- Definition: A text-based application window to enter commands and view output.
-- Quick: Window where you type commands.
-- Examples: Windows Terminal, GNOME Terminal, macOS Terminal.
-- Open (examples):
-  - Windows: press `Win` and type `Windows Terminal` or `wt`
-  - Linux (GUI): `Ctrl+Alt+T`
-  - macOS: `⌘ + Space` → type `Terminal`
+> A structured knowledge base for Linux, DevOps and Cloud Engineering.
 
 ---
 
-## PATH Environment Variable
+# Table of Contents
 
-- Definition: A list of directories the shell searches for executable commands.
-- Purpose:
-  - Run commands without typing the full path
-  - Search directories from left to right
-- Useful commands:
-  - `echo $PATH` — view PATH
-  - `which git` — find Git executable
-  - `which python3` — find Python executable
-  - `which ls` — find `ls` executable
-
----
-
-## Shell
-
-- Definition: Command-line interpreter that reads commands and runs them.
-- Quick: Translator between you and the OS.
-- Common shells: `bash`, `zsh`, `fish`, `powershell`, `cmd`.
-- Check current shell (Linux/macOS):
-  - `echo $SHELL`
-- Show available shells: `cat /etc/shells`
+1. Terminal
+2. Shell
+3. Bash
+4. CMD
+5. PowerShell
+6. Kernel
+7. WSL
+8. Linux vs Linux Distribution
+9. Ubuntu
+10. Linux Prompt
+11. PATH Environment Variable
+12. Basic Linux Commands
 
 ---
 
-## Bash (Bourne Again Shell)
+# 1. Terminal
 
-- Definition: A widely used Unix/Linux shell and scripting language.
-- Quick: Common default shell for many Linux distros.
-- Useful commands (examples):
-  - Navigation: `pwd`, `ls -la`, `cd /path`
-  - File ops: `cp src dest`, `mv src dest`, `rm file`, `mkdir dir`, `touch file`
-  - Viewing: `cat file`, `less file`, `head -n 20 file`, `tail -f file`
-  - Search & pipes: `grep 'pattern' file`, `ps aux | grep java`, `cmd1 | cmd2`
-  - Redirects: `command > out.txt`, `command >> append.txt`, `command 2>&1`
-  - Permissions: `chmod 755 file`, `chown user:group file`
-  - Processes: `ps aux`, `top` / `htop`, `kill <PID>`, `kill -9 <PID>`
+## Definition
 
----
+A **Terminal** is a text-based application that provides an interface for users to interact with the operating system by entering commands and viewing their output.
 
-## Command Prompt (CMD) — Windows
+## Simple Explanation
 
-- Definition: Windows' basic command-line interpreter for legacy commands and batch scripts.
-- Quick: Simple Windows shell.
-- Examples: `dir`, `cd`, `del file`, `copy src dest`, `cls`
+Think of it as a **chat window** where you communicate with the operating system.
+
+## Examples
+
+- Windows Terminal
+- GNOME Terminal
+- macOS Terminal
 
 ---
 
-## PowerShell
+# 2. Shell
 
-- Definition: Microsoft’s advanced shell and scripting environment for automation and administration.
-- Quick: More powerful than CMD; object-based piping.
-- Basic commands (PowerShell):
-  - List: `Get-ChildItem` (alias `ls`)
-  - Change dir: `Set-Location` (alias `cd`)
-  - Processes: `Get-Process`, `Stop-Process -Id <PID>`
-  - Commands discovery: `Get-Command`, `Get-Help <cmd>`
+## Definition
 
----
+A **Shell** is a command-line interpreter that reads user commands, interprets them, and communicates with the operating system to execute them.
 
-## Kernel
+## Simple Explanation
 
-- Definition: Core component of an operating system that manages hardware and core services.
-- Responsibilities:
-  - CPU scheduling and management
-  - Memory management (allocation, swap)
-  - Process lifecycle and IPC
-  - Device drivers and I/O
-  - Filesystem access and management
-- Check kernel version (Linux/macOS): `uname -r`
+The shell acts as a **translator** between the user and the operating system.
 
----
+## Common Shells
 
-## WSL (Windows Subsystem for Linux)
+- Bash
+- Zsh
+- Fish
+- Ksh
+- CMD
+- PowerShell
 
-- Definition: Runs a real Linux environment inside Windows without a VM.
-- Quick: Use Linux tools on Windows.
-- Useful commands (Windows PowerShell / cmd):
-  - List distributions: `wsl -l -v`
-  - Set default distro: `wsl --setdefault <DistroName>`
-  - Run a command in WSL: `wsl -d <DistroName> -- <command>`
-  - Launch default distro: `wsl` or open it from Windows Terminal
+## Useful Commands
+
+```bash
+echo $SHELL
+cat /etc/shells
+```
 
 ---
 
-## Linux vs Distributions
+# 3. Bash
 
-- Clarification: "Linux" is strictly the kernel. Distributions bundle the kernel with tools and a package manager.
-- Examples of distributions: Ubuntu, Debian, Fedora, CentOS, Arch.
+## Definition
 
----
+**Bash (Bourne Again Shell)** is the most widely used Unix/Linux shell and scripting language.
 
-## Ubuntu
+## Simple Explanation
 
-- Definition: A popular Linux distribution built on the Linux kernel.
-- Quick: General-purpose OS used for servers, cloud, and development.
-- Common package management commands (APT):
-  - Update package lists: `sudo apt update`
-  - Upgrade packages: `sudo apt upgrade`
-  - Install a package: `sudo apt install <package>`
-  - Remove a package: `sudo apt remove <package>`
+Bash is one implementation of a shell.
+
+Shell → Category
+
+Bash → One type of Shell
 
 ---
 
-## Quick Reference — Common Commands
+# 4. Command Prompt (CMD)
 
-- Bash / Linux:
-  - `ls -la` — list files
-  - `cd /path` — change directory
-  - `cat file` — show file
-  - `grep -R "text" .` — search recursively
-  - `sudo <command>` — run as root
-- System:
-  - `uname -a` — kernel and system info
-  - `df -h` — disk usage
-  - `free -m` — memory usage
-  - `journalctl -u <service>` — view systemd logs
-- WSL:
-  - `wsl -l -v`, `wsl -d Ubuntu`
-- PowerShell:
-  - `Get-ChildItem`, `Get-Process`, `Stop-Process -Id <PID>`
+## Definition
+
+Command Prompt (CMD) is the default Windows command-line interpreter.
 
 ---
 
- 
+# 5. PowerShell
+
+## Definition
+
+PowerShell is Microsoft's advanced command-line shell and scripting environment used for automation and system administration.
+
+---
+
+# 6. Kernel
+
+## Definition
+
+The **Kernel** is the core component of the operating system that manages hardware resources and provides services to software applications.
+
+## Responsibilities
+
+- CPU Management
+- Memory Management
+- Process Management
+- Device Management
+- File System Management
+
+## Check Kernel Version
+
+```bash
+uname -r
+```
+
+---
+
+# 7. WSL
+
+## Definition
+
+WSL (Windows Subsystem for Linux) allows a real Linux environment to run directly inside Windows without using a virtual machine.
+
+## Useful Commands
+
+```powershell
+wsl
+wsl -l -v
+wsl --shutdown
+```
+
+---
+
+# 8. Linux vs Linux Distribution
+
+## Linux
+
+Linux is an **open-source kernel**.
+
+## Linux Distribution
+
+A Linux Distribution is a complete operating system built using the Linux kernel.
+
+Examples
+
+- Ubuntu
+- Debian
+- Fedora
+- CentOS
+- Arch Linux
+
+---
+
+# 9. Ubuntu
+
+Ubuntu is one of the most popular Linux distributions used in cloud computing, DevOps and servers.
+
+---
+
+# 10. Linux Prompt
+
+Example
+
+```bash
+yp@Yp:~$
+```
+
+## Structure
+
+```text
+username@hostname:current_directory$
+```
+
+| Part | Meaning |
+|------|---------|
+| yp | Logged-in Username |
+| @ | Separator |
+| Yp | Hostname |
+| : | Separator |
+| ~ | Home Directory |
+| $ | Normal User |
+| # | Root User |
+
+## Home Directory
+
+The symbol
+
+```bash
+~
+```
+
+represents
+
+```bash
+/home/<username>
+```
+
+Useful Commands
+
+```bash
+pwd
+echo $HOME
+cd ~
+cd
+```
+
+---
+
+# 11. PATH Environment Variable
+
+## Definition
+
+PATH is an environment variable that stores a list of directories where the shell searches for executable commands.
+
+## Why do we need PATH?
+
+Without PATH, we would need to type the full location of every program.
+
+Instead of
+
+```bash
+/usr/bin/git
+```
+
+we simply type
+
+```bash
+git
+```
+
+## Workflow
+
+```text
+You type:
+
+git
+      │
+      ▼
+Shell
+      │
+Checks PATH
+      │
+Searches directories
+      │
+Finds:
+/usr/bin/git
+      │
+Runs Git
+```
+
+## Useful Commands
+
+```bash
+echo $PATH
+
+which git
+
+which python3
+
+whereis git
+```
+
+---
+
+# 12. Basic Linux Commands
+
+## pwd
+
+### Definition
+
+Displays the current working directory.
+
+### Syntax
+
+```bash
+pwd
+```
+
+---
+
+## ls
+
+### Definition
+
+Lists files and directories.
+
+### Syntax
+
+```bash
+ls
+```
+
+### Common Options
+
+```bash
+ls -l
+ls -a
+ls -la
+ls -lh
+```
+
+---
+
+## cd
+
+### Definition
+
+Changes the current working directory.
+
+### Examples
+
+```bash
+cd Documents
+cd ..
+cd /
+cd ~
+cd
+```
+
+---
+
+## mkdir
+
+### Definition
+
+Creates a new directory.
+
+```bash
+mkdir Linux
+```
+
+---
+
+## touch
+
+### Definition
+
+Creates an empty file.
+
+```bash
+touch notes.txt
+```
+
+---
+
+## cp
+
+### Definition
+
+Copies files or directories.
+
+```bash
+cp file1.txt file2.txt
+cp -r folder1 folder2
+```
+
+---
+
+## mv
+
+### Definition
+
+Moves or renames files/directories.
+
+```bash
+mv file1.txt file2.txt
+mv notes.txt Documents/
+```
+
+---
+
+## rm
+
+### Definition
+
+Deletes files or directories.
+
+```bash
+rm file.txt
+rm -r folder
+```
+
+---
+
+## clear
+
+### Definition
+
+Clears the terminal screen.
+
+```bash
+clear
+```
+
+Shortcut
+
+```
+Ctrl + L
+```
+
+---
+
+## cat
+
+### Definition
+
+Displays the content of a file.
+
+```bash
+cat notes.txt
+```
+
+---
+
+## echo
+
+### Definition
+
+Displays text or variable values.
+
+```bash
+echo "Hello Linux"
+
+echo $HOME
+```
+
+---
+
+## whoami
+
+### Definition
+
+Displays the current logged-in username.
+
+```bash
+whoami
+```
+
+---
+
+## hostname
+
+### Definition
+
+Displays the hostname of the system.
+
+```bash
+hostname
+```
+
+---
+
+## which
+
+### Definition
+
+Displays the executable path of a command.
+
+```bash
+which python3
+which git
+```
+
+---
+
+## whereis
+
+### Definition
+
+Displays the executable, source code and manual page locations.
+
+```bash
+whereis python3
+```
+
+---
+
+## man
+
+### Definition
+
+Displays the manual page for a command.
+
+```bash
+man ls
+```
+
+Exit
+
+```
+q
+```
+
+---
+
+# Quick Revision
+
+| Command | Purpose |
+|----------|----------|
+| pwd | Current Working Directory |
+| ls | List Files |
+| cd | Change Directory |
+| mkdir | Create Directory |
+| touch | Create Empty File |
+| cp | Copy Files |
+| mv | Move / Rename |
+| rm | Delete |
+| clear | Clear Terminal |
+| cat | View File |
+| echo | Print Text |
+| whoami | Current User |
+| hostname | Computer Name |
+| which | Executable Path |
+| whereis | Executable + Docs |
+| man | Documentation |
+
+---
+
+# Interview Questions
+
+### What is the difference between Terminal and Shell?
+
+Terminal is the application where users type commands.
+
+Shell is the command interpreter that executes those commands.
+
+---
+
+### What is the difference between Bash and Zsh?
+
+Both are shells.
+
+Bash is the traditional default shell.
+
+Zsh provides better auto-completion, plugins and customization.
+
+---
+
+### What is PATH?
+
+PATH is an environment variable that stores directories where the shell searches for executable commands.
+
+---
+
+### Difference between Linux and Ubuntu?
+
+Linux is a kernel.
+
+Ubuntu is a Linux distribution built using the Linux kernel.
+
+---
+
+### Difference between Normal User and Root User?
+
+- `$` → Normal User
+- `#` → Root User
