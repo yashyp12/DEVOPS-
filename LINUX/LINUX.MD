@@ -324,7 +324,8 @@ Changes the current working directory.
 
 ```bash
 cd Documents
-cd ..
+cd .. (previous directory)
+cd . (current directory)
 cd /
 cd ~
 cd
