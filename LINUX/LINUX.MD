@@ -557,10 +557,33 @@ combines the content of file1.txt and file2.txt and writes it to file3.txt.
 cat file1.txt file2.txt > file3.txt
 ```
 
----
+tranlsates content file from smaller to bigger text.
 
+```bash
+cat file.txt | tr 'a-z' 'A-Z' > upper.txt
+```
 
+## echo
+### Definition
 
+Displays text or variable values.
+
+```bash
+echo "Hello Linux"
+echo $HOME
+```
+ 
+## man
+
+### Definition
+
+Displays the manual page for a command.
+
+```bash
+man ls
+```
+ 
+  
 
 
 
