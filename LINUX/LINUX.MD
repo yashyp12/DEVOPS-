@@ -234,6 +234,13 @@ we simply type
 git
 ```
 
+set env path in bash temporary session .
+``` bash
+- yp@Yp:~$ export NAME= "yASH"
+- yp@Yp:~$ echo $NAME
+```
+---
+
 ## Workflow
 
 ```text
@@ -546,6 +553,10 @@ Zsh provides better auto-completion, plugins and customization.
 
 PATH is an environment variable that stores directories where the shell searches for executable commands.
 
+``` bash
+- yp@Yp:~$ export NAME= "yASH"
+- yp@Yp:~$ echo $NAME
+```
 ---
 
 ### Difference between Linux and Ubuntu?
