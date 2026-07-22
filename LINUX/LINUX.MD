@@ -306,10 +306,11 @@ ls
 ### Common Options
 
 ```bash
-ls -l
-ls -a
-ls -la
-ls -lh
+ls -l   -shows detailed information
+ls -a    - shows hidden files
+ls -la   -shows detailed information including hidden files
+ls -lh   - shows detailed information in human-readable format
+ls -R    - lists files recursively
 ```
 
 ---
@@ -422,9 +423,14 @@ Displays the content of a file.
 
 ```bash
 cat notes.txt
+at practise/demo.txt
+
+- to create a file and write contants in it
+
+cat HELLO.txt > content of the file will be written in HELLO.txt
 ```
 
----
+--- 
 
 ## echo
 
@@ -448,6 +454,26 @@ Displays the current logged-in username.
 
 ```bash
 whoami
+```
+
+---
+HISTORY
+### Definition
+
+Displays history of commands executed in the terminal.
+
+```bash
+history
+```
+
+---
+
+tree
+### Definition
+shows the directory structure in a tree-like format.
+
+```bash
+tree
 ```
 
 ---
@@ -507,46 +533,17 @@ q
 
 ---
 
-# Quick Revision
 
-| Command | Purpose |
-|----------|----------|
-| pwd | Current Working Directory |
-| ls | List Files |
-| cd | Change Directory |
-| mkdir | Create Directory |
-| touch | Create Empty File |
-| cp | Copy Files |
-| mv | Move / Rename |
-| rm | Delete |
-| clear | Clear Terminal |
-| cat | View File |
-| echo | Print Text |
-| whoami | Current User |
-| hostname | Computer Name |
-| which | Executable Path |
-| whereis | Executable + Docs |
-| man | Documentation |
 
----
+## cat
 
-# Interview Questions
+### Definition
 
-### What is the difference between Terminal and Shell?
+Displays the content of a file.
 
-Terminal is the application where users type commands.
-
-Shell is the command interpreter that executes those commands.
-
----
-
-### What is the difference between Bash and Zsh?
-
-Both are shells.
-
-Bash is the traditional default shell.
-
-Zsh provides better auto-completion, plugins and customization.
+```bash
+cat notes.txt
+```
 
 ---
 
@@ -572,3 +569,5 @@ Ubuntu is a Linux distribution built using the Linux kernel.
 
 - `$` → Normal User
 - `#` → Root User
+
+
