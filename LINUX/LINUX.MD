@@ -547,6 +547,40 @@ cat notes.txt
 
 ---
 
+## cat file1.txt file 2.txt > file3.txt
+
+### Definition
+
+combines the content of file1.txt and file2.txt and writes it to file3.txt.
+
+```bash
+cat file1.txt file2.txt > file3.txt
+```
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### What is PATH?
 
 PATH is an environment variable that stores directories where the shell searches for executable commands.
