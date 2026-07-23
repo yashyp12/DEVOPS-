@@ -629,6 +629,52 @@ mv oldname.txt ../newname.txt
 
 
 
+## appropos
+
+### Definition
+Linux searches its manual pages and suggests related commands.
+
+```bash    
+appropos "copy"
+```
+
+
+## sudo
+
+### Definition
+Allows a permitted user to execute a command as the superuser or another user.
+
+``` bash
+sudo
+
+```
+
+## df
+### Definition
+Displays disk space usage of file systems.
+
+```bash
+df -h
+```
+
+
+## head
+### Definition
+Displays the first few lines of a file.
+
+```bash
+head -n 10 file.txt
+```
+
+## tail
+### Definition
+Displays the last few lines of a file.
+
+```bash
+tail -n 10 file.txt
+```
+
+
 
 ### What is PATH?
 
