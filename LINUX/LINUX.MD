@@ -611,6 +611,19 @@ cp -r folder1 folder2
 ```
 
 
+## mv
+
+### Definition
+Moves or renames files/directories.
+
+```bash
+mv file1.txt file2.txt
+mv notes.txt Documents/
+```
+
+
+
+
 ### What is PATH?
 
 PATH is an environment variable that stores directories where the shell searches for executable commands.
