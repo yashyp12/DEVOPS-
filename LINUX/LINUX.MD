@@ -571,6 +571,9 @@ Displays text or variable values.
 ```bash
 echo "Hello Linux"
 echo $HOME
+
+echo "Hello World" >> copy_file.txt
+(appends the text to the file)
 ```
  
 ## man
@@ -583,8 +586,33 @@ Displays the manual page for a command.
 man ls
 ```
  
-  
+## mkdir
 
+### Definition
+
+Creates a new directory.
+
+```bash
+mkdir Linux
+
+mkdir-p Linux/DevOps/Cloud
+(creates parent directories if they don't exist)
+```
+  
+## cp
+
+### Definition
+
+Copies files or directories.
+```bash
+cp file1.txt file2.txt
+
+cp -r folder1 folder2
+```
+
+```
+ 
+    
 
 
 
