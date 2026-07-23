@@ -610,27 +610,6 @@ cp file1.txt file2.txt
 cp -r folder1 folder2
 ```
 
-```
- 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### What is PATH?
 
