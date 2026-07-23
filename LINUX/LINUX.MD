@@ -621,6 +621,12 @@ mv file1.txt file2.txt
 mv notes.txt Documents/
 ```
 
+mv can also be use to rename a file or directory.
+
+```bash     
+mv oldname.txt ../newname.txt
+```
+
 
 
 
