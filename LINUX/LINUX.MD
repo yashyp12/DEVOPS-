@@ -675,6 +675,39 @@ tail -n 10 file.txt
 ```
 
 
+## find
+### Definition    
+
+Searches for files and directories in a directory hierarchy.
+
+```bash
+find /path/to/search -name "filename"
+```
+```bash
+find . -type -d
+```   
+(searches for directories in the current directory and its subdirectories)
+
+```bash
+find -type f
+```
+(searches for files in the current directory and its subdirectories)
+
+
+```bash
+find -type f -name "*.txt"
+```   
+(searches for all text files in the current directory and its subdirectories)
+
+
+
+
+
+
+
+
+
+
 
 ### What is PATH?
 
