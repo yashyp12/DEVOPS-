@@ -715,11 +715,21 @@ File permissions determine who can read, write, or execute a file.
 ls -l
 ```
 
+# chmod
 
+chmod WHO OPERATION PERMISSION FILE
 
+``` bash
+chmod 755 file.txt
+```
 
+# Syntax:
 
+chmod WHO OPERATION PERMISSION FILE
 
+``` bash
+chmod   u      +        x      script.sh
+```
 
 
 ### What is PATH?
