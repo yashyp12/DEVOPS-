@@ -705,9 +705,15 @@ find -size +100M
 (searches for files larger than 100MB in the current directory and its subdirectories)
 
 
+## file Permissions 
+### Definition
+File permissions determine who can read, write, or execute a file.
 
+- Owner , Group , Others
 
-
+```bash
+ls -l
+```
 
 
 
