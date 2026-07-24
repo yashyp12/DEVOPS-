@@ -699,6 +699,13 @@ find -type f -name "*.txt"
 ```   
 (searches for all text files in the current directory and its subdirectories)
 
+```bash
+find -size +100M
+```   
+(searches for files larger than 100MB in the current directory and its subdirectories)
+
+
+
 
 
 
