@@ -767,7 +767,6 @@ Linux assigns a numeric value to each permission:
 The numbers are simply the sum of these values.
 
 Example:
-
 ```text
 rwx
 
@@ -826,6 +825,22 @@ gives **everyone full access** to `upper.txt`.
 | `chmod 755 script.sh` | `rwxr-xr-x` |
 | `chmod 644 notes.txt` | `rw-r--r--` |
 | `chmod 600 id_rsa` | `rw-------` |
+
+
+
+
+## chown
+### Definition
+Changes the ownership of a file or directory.
+
+```bash
+chown newowner:newgroup file.txt
+```
+
+
+
+
+
 
 ### What is PATH?
 
