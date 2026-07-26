@@ -855,6 +855,18 @@ sudo chown :newgroup file.txt
 sudo chgrp newgroup file.txt
 ```
 
+## users context
+
+(command is running as the current user )
+```bash 
+cat upper.txt
+```
+
+(command is running a root administrator user )
+```bash 
+sudo cat upper.txt
+```
+
 
 
 
