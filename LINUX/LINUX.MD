@@ -834,8 +834,30 @@ gives **everyone full access** to `upper.txt`.
 Changes the ownership of a file or directory.
 
 ```bash
-chown newowner:newgroup file.txt
+sudo chown newowner:newgroup file.txt
 ```
+
+
+
+Ex - 
+
+```bash     
+sudo chown yp:yp file.txt
+```
+
+```bash
+sudo chown root demo.txt
+```
+
+## to Change Only group
+```bash     
+sudo chown :newgroup file.txt
+sudo chgrp newgroup file.txt
+```
+
+
+
+
 
 
 
