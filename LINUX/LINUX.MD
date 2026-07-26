@@ -731,6 +731,100 @@ chmod WHO OPERATION PERMISSION FILE
 chmod   u      +        x      script.sh
 ```
 
+## Understanding `chmod 777`
+
+### Syntax
+
+```bash
+chmod 777 filename
+```
+
+### How it Works
+
+`chmod` = **Change Mode (Permissions)**
+
+The three digits represent permissions for:
+
+```text
+777
+
+│ │ │
+
+│ │ └── Others
+│ └──── Group
+└────── Owner
+```
+
+Linux assigns a numeric value to each permission:
+
+| Permission | Value |
+|------------|------:|
+| Read (`r`) | 4 |
+| Write (`w`) | 2 |
+| Execute (`x`) | 1 |
+
+The numbers are simply the sum of these values.
+
+Example:
+
+```text
+rwx
+
+↓
+
+4 + 2 + 1
+
+↓
+
+7
+```
+
+Therefore:
+
+```text
+777
+
+↓
+
+7     7     7
+
+↓
+
+rwx   rwx   rwx
+```
+
+Meaning:
+
+- **Owner:** Read, Write, Execute
+- **Group:** Read, Write, Execute
+- **Others:** Read, Write, Execute
+
+So,
+
+```bash
+chmod 777 upper.txt
+```
+
+gives **everyone full access** to `upper.txt`.
+
+### Common Permission Values
+
+| Permission | Numeric | Meaning |
+|------------|--------:|---------|
+| `rwx` | 7 | Read + Write + Execute |
+| `rw-` | 6 | Read + Write |
+| `r-x` | 5 | Read + Execute |
+| `r--` | 4 | Read Only |
+| `---` | 0 | No Permission |
+
+### Examples
+
+| Command | Permission |
+|---------|------------|
+| `chmod 777 file.txt` | `rwxrwxrwx` |
+| `chmod 755 script.sh` | `rwxr-xr-x` |
+| `chmod 644 notes.txt` | `rw-r--r--` |
+| `chmod 600 id_rsa` | `rw-------` |
 
 ### What is PATH?
 
