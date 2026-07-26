@@ -868,8 +868,10 @@ sudo cat upper.txt
 ```
 
 
+## grep
+## Definition
 
-
+grep searches for specific text (a pattern) inside one or more files and prints the matching lines.
 
 
 
