@@ -762,6 +762,7 @@ Linux assigns a numeric value to each permission:
 | Read (`r`) | 4 |
 | Write (`w`) | 2 |
 | Execute (`x`) | 1 |
+| No Permission (`-`) | 0 |
 
 The numbers are simply the sum of these values.
 
