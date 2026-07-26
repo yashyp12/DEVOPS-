@@ -874,6 +874,12 @@ sudo cat upper.txt
 grep searches for specific text (a pattern) inside one or more files and prints the matching lines.
 
 
+```bash
+grep "pattern to search" filename 
+```
+
+
+
 
 
 
