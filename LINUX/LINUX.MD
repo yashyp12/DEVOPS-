@@ -855,6 +855,11 @@ sudo chown :newgroup file.txt
 sudo chgrp newgroup file.txt
 ```
 
+## check for group
+```bash
+cat /etc/group
+```
+
 ## users context
 
 (command is running as the current user )
@@ -879,7 +884,11 @@ grep searches for specific text (a pattern) inside one or more files and prints 
 grep "pattern to search" filename 
 ```
 
-
+Ex- 
+```bash
+grep "Linux" notes.txt
+grep -w "Linux" notes.txt (searches for the whole word "Linux" in notes.txt)
+```
 
 
 
