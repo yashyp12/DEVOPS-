@@ -888,6 +888,14 @@ Ex-
 ```bash
 grep "Linux" notes.txt
 grep -w "Linux" notes.txt (searches for the whole word "Linux" in notes.txt)
+
+grep -i "linux" notes.txt (searches for "linux" in a case-insensitive manner)
+
+grep -win "yash" ./*.txt 
+(searches for the whole word "yash" in a case-insensitive manner in all text files in the current directory)
+
+grep -r "Linux" /path/to/directory 
+(searches for "Linux" recursively in all files within the specified directory)
 ```
 
 
