@@ -924,6 +924,23 @@ wget https://example.com/file.txt
 
 
 
+# top
+# definition
+
+```bash
+top (displays real-time information about system processes, resource usage, and performance metrics)
+```
+
+```bash
+kill <PID> (terminates a specific process by its Process ID)
+```
+
+```bash
+uname -a (displays detailed information about the system, including kernel version, hostname, and architecture)
+```
+
+
+
 
 
 
