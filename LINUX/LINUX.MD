@@ -906,7 +906,8 @@ grep -r "Linux" /path/to/directory
 # terminnal shortcuts
 
 ```bash
-
+git add .;git comit -m "message";git push origin main
+```
 
 
 
