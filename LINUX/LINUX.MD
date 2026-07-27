@@ -908,6 +908,15 @@ grep -r "Linux" /path/to/directory
 ```bash
 git add .;git comit -m "message";git push origin main
 ```
+```bash
+sort companies.txt
+(sorts the lines in companies.txt in ascending order)
+```
+```bash
+sort -r companies.txt
+(sorts the lines in companies.txt in descending order)
+```
+
 
 
 
