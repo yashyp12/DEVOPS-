@@ -464,6 +464,8 @@ Displays history of commands executed in the terminal.
 
 ```bash
 history
+
+history | grep "ls" (searches for "ls" in the command history)
 ```
 
 ---
