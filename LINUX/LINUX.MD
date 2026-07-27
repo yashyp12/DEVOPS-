@@ -903,6 +903,12 @@ grep -r "Linux" /path/to/directory
 
 
 
+# terminnal shortcuts
+
+```bash
+
+
+
 
 ### What is PATH?
 
