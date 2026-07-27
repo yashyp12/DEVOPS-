@@ -917,6 +917,13 @@ sort -r companies.txt
 (sorts the lines in companies.txt in descending order)
 ```
 
+```bash
+wget https://example.com/file.txt
+(downloads file.txt from the specified URL)
+```
+
+
+
 
 
 
