@@ -986,7 +986,17 @@ cat /etc/passwd
 su - newuser
 ```
 
+- To delete the user account and its home directory
+```bash
+sudo userdel -r newuser
+```
 
+# adduser
+command to add user (along with home directory)
+
+```bash
+sudo adduser newuser
+```
 
 
 ### What is PATH?
