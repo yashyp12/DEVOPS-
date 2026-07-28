@@ -974,6 +974,18 @@ sudo useradd -m newuser
 sudo passwd newuser
 ```   
 
+- To check whether the user created or not 
+```bash
+id newuser
+cat /etc/passwd
+```
+
+- To switch to the new user account
+
+```bash
+su - newuser
+```
+
 
 
 
