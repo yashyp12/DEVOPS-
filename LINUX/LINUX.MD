@@ -923,7 +923,6 @@ wget https://example.com/file.txt
 ```
 
 
-
 # top
 # definition
 
@@ -939,6 +938,12 @@ kill <PID> (terminates a specific process by its Process ID)
 uname -a (displays detailed information about the system, including kernel version, hostname, and architecture)
 ```
 
+# zip
+# definition
+
+```bash     
+zip archive.zip file1.txt file2.txt
+```
 
 
 
