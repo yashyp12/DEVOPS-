@@ -945,6 +945,11 @@ uname -a (displays detailed information about the system, including kernel versi
 zip archive.zip file1.txt file2.txt
 ```
 
+# unzip
+(extracts files from a ZIP archive)
+```bash
+unzip archive.zip
+```
 
 
 
