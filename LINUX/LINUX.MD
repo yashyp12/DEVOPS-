@@ -940,7 +940,7 @@ uname -a (displays detailed information about the system, including kernel versi
 
 # zip
 # definition
-
+(compresses files into a ZIP archive)
 ```bash     
 zip archive.zip file1.txt file2.txt
 ```
