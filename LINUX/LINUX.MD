@@ -1006,7 +1006,23 @@ command to add user (along with home directory)
 sudo adduser newuser
 ```
 
+# Opeating System Commands
 
+# uname 
+(displays system information, including the kernel name, version, and architecture)
+```bash
+uname -a
+uname -o(displays the operating system name)
+uname -m(displays the machine hardware name)
+uname -r (displays the kernel release version)
+```
+
+
+- (displays detailed information about the CPU architecture and specifications)
+
+  ```bash
+lscpu
+```
 
 
 ### What is PATH?
