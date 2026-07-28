@@ -935,6 +935,13 @@ kill <PID> (terminates a specific process by its Process ID)
 ```
 kill -9 <PID> (forcefully terminates a specific process by its Process ID)
 
+
+# Process
+
+```bash
+ps -fp <PID> (displays detailed information about a specific process by its Process ID)
+
+
 ```bash
 uname -a (displays detailed information about the system, including kernel version, hostname, and architecture)
 ```
@@ -998,6 +1005,8 @@ command to add user (along with home directory)
 ```bash
 sudo adduser newuser
 ```
+
+
 
 
 ### What is PATH?
