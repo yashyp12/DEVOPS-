@@ -933,6 +933,7 @@ top (displays real-time information about system processes, resource usage, and 
 ```bash
 kill <PID> (terminates a specific process by its Process ID)
 ```
+kill -9 <PID> (forcefully terminates a specific process by its Process ID)
 
 ```bash
 uname -a (displays detailed information about the system, including kernel version, hostname, and architecture)
