@@ -951,6 +951,29 @@ zip archive.zip file1.txt file2.txt
 unzip archive.zip
 ```
 
+```bash
+hostname -I (displays the IP address(es) associated with the hostname)
+```
+
+```bash
+hostname -i (displays the IP address of the system)
+```
+
+
+# useradd
+# definition
+(creates a new user account on the system)
+
+``` bash
+sudo useradd -m newuser
+(creates a new user account named "newuser" and creates a home directory for the user)
+```
+
+(set password for the new user)
+```bash
+sudo passwd newuser
+```   
+
 
 
 
