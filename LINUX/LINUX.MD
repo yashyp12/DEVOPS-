@@ -1105,7 +1105,11 @@ htop (is an interactive process viewer and system monitor for Unix-like operatin
 echo "first" && "hello" (executes the second command only if the first command succeeds)
 ```
 
-```bash
+``` bash
+echo "first" || "hello" (executes the second command only if the first command fails)
+```
+
+
 
 ### What is PATH?
 
