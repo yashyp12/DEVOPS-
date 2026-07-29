@@ -1110,6 +1110,11 @@ echo "first" || "hello" (executes the second command only if the first command f
 ```
 
 
+```bash
+rm -rf !(companies.txt)
+(removes all files and directories in the current directory except for companies.txt)
+```
+
 
 ### What is PATH?
 
