@@ -1092,6 +1092,20 @@ htop (is an interactive process viewer and system monitor for Unix-like operatin
 ```
 
 
+# working with Operators 
+
+
+``` bash 
+ ping google.com & ping amazon.com
+(sends ICMP echo requests to both google.com and amazon.com simultaneously in the background)
+ ```
+
+
+``` bash
+echo "first" && "hello" (executes the second command only if the first command succeeds)
+```
+
+```bash
 
 ### What is PATH?
 
