@@ -1020,9 +1020,67 @@ uname -r (displays the kernel release version)
 
 - (displays detailed information about the CPU architecture and specifications)
 
-  ```bash
+```bash
 lscpu
 ```
+
+```bash
+free -h (displays memory usage in a human-readable format)
+```
+
+```bash
+vmstat (displays virtual memory statistics, including page faults, swaps, and memory usage)
+```
+
+```bash
+id (displays user and group information for the current user)
+```
+
+``` bash
+getent group (displays group information from the system's group database)
+```
+
+- Format
+group_name : password : GID : members
+
+```bash
+lsof (lists open files and the processes that have them open)
+
+lsof - root (lists open files for the root user)
+```   
+
+
+# Networking Commands 
+
+# nslookup
+### Definition
+nslookup is a command-line tool used to query Domain Name System (DNS) servers to obtain information about domain names, IP addresses, and other DNS records.
+
+```bash
+nslookup google.com
+``
+
+```bash
+netstat -tuln (displays active network connections, listening ports, and associated processes)
+```
+
+```bash
+ifconfig (displays network interface configuration and IP address information)
+```
+
+
+### Definition
+sed (Stream Editor) is a command-line utility used to read, filter, search, and modify text in a stream or file.
+
+ ``` bash 
+ sed
+ ```
+
+```bash
+cut (  extracts selected portions (columns or fields) from each line of a file or command output.)
+cut -c 1-2 companies.txt
+```
+
 
 
 ### What is PATH?
