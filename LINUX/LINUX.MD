@@ -1082,6 +1082,16 @@ cut -c 1-2 companies.txt
 ```
 
 
+``` bash
+telnet (is a command-line tool used to establish a connection to a remote host over the Telnet protocol, allowing users to access and manage remote systems.)
+```
+
+
+``` bash
+htop (is an interactive process viewer and system monitor for Unix-like operating systems, providing real-time information about running processes, resource usage, and system performance.)
+```
+
+
 
 ### What is PATH?
 
