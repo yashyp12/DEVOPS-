@@ -1109,6 +1109,10 @@ echo "first" && "hello" (executes the second command only if the first command s
 echo "first" || "hello" (executes the second command only if the first command fails)
 ```
 
+``` bash
+echo "hey" && {echo "hi"; echo "i am good"}
+```
+
 
 ```bash
 rm -rf !(companies.txt)
@@ -1116,9 +1120,12 @@ rm -rf !(companies.txt)
 ```
 
 
+
+
+
 ### What is PATH?
 
-PATH is an environment variable that stores directories where the shell searches for executable commands.
+PATH is an environment variable                 that stores directories where the shell searches for executable commands.
 
 ``` bash
 - yp@Yp:~$ export NAME= "yASH"
