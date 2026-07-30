@@ -1148,5 +1148,17 @@ Secure Shell (SSH) is a cryptographic network protocol that allows secure commun
 
 - Allows us to connect to a remot linux server and execute commands on it.
 
-# SSH Commands
+
+## Why SSH is Used
+
+- Remote server administration
+- Secure file transfer (SCP/SFTP)
+- Deploy applications
+- Execute Linux commands remotely
+- Manage cloud servers (AWS, Azure, GCP)
+
+## Why is it Called Secure Shell?
+
+- **Secure** → Communication is encrypted.
+- **Shell** → Provides remote command-line access to another computer.
 
