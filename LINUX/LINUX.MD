@@ -1163,3 +1163,10 @@ Secure Shell (SSH) is a cryptographic network protocol that allows secure commun
 # More about SSH 
 
 - default port - 22
+
+# SSH Architecture - 
+
+SSH follows a client-server architecture, where the SSH client initiates a connection to the SSH server. The server authenticates the client and establishes a secure encrypted channel for communication.
+
+
+
