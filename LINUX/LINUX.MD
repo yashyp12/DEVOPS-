@@ -1215,3 +1215,35 @@ Authentication is the process of verifying the identity of a user before grantin
 - Public key → Server
 - Private key → Client
 
+# ~/.ssh Directory
+
+The `~/.ssh` directory stores all SSH-related files.
+
+## Common Files
+
+### id_ed25519
+
+- Private SSH Key
+- Keep it secret
+- Never share it
+
+### id_ed25519.pub
+
+- Public SSH Key
+- Upload to GitHub, AWS, Azure
+
+### known_hosts
+
+- Stores trusted remote servers
+- Prevents connecting to fake servers
+
+### config
+
+- Stores SSH connection shortcuts
+- Useful for managing multiple servers
+
+### authorized_keys
+
+- Exists on the remote server
+- Stores users' public keys
+- Used for SSH key authentication
