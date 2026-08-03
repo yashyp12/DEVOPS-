@@ -1168,5 +1168,15 @@ Secure Shell (SSH) is a cryptographic network protocol that allows secure commun
 
 SSH follows a client-server architecture, where the SSH client initiates a connection to the SSH server. The server authenticates the client and establishes a secure encrypted channel for communication.
 
+## Components
+
+- SSH Client → Initiates the connection.
+- Internet → Transfers encrypted data.
+- SSH Server → Accepts SSH connections.
+- Port 22 → Default SSH port.
+- Authentication → Verifies user identity.
+- Authorization → Determines what the user can access.
+- Secure Session → Allows encrypted command execution.
+
 
 
