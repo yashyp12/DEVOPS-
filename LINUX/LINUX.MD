@@ -1178,5 +1178,40 @@ SSH follows a client-server architecture, where the SSH client initiates a conne
 - Authorization → Determines what the user can access.
 - Secure Session → Allows encrypted command execution.
 
+# SSH Authentication
 
+Authentication is the process of verifying the identity of a user before granting access.
+
+## Authentication Methods
+
+### Password Authentication
+
+- Uses username and password.
+- Easy to use.
+- Less secure.
+- Vulnerable to brute-force attacks.
+
+### SSH Key Authentication
+
+- Uses a Public Key and a Private Key.
+- Recommended for production servers.
+- Used by AWS, Azure, GitHub, and most Linux servers.
+
+## Public Key
+
+- Safe to share.
+- Stored on the server.
+- Located in `~/.ssh/authorized_keys`.
+
+## Private Key
+
+- Secret.
+- Stored only on your local machine.
+- Never share or upload it.
+
+## Key Pair
+
+- Generated together using `ssh-keygen`.
+- Public key → Server
+- Private key → Client
 
