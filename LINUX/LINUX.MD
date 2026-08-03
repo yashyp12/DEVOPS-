@@ -1144,7 +1144,7 @@ Ubuntu is a Linux distribution built using the Linux kernel.
 
 
 # SSH - Secure Shell    
-Secure Shell (SSH) is a cryptographic network protocol that allows secure communication between a client and a server over an unsecured network. It provides a secure channel for remote login, command execution, and data transfer.
+Secure Shell (SSH) is a cryptographic network protocol that allows secure communication between a client and a server over an unsecured network. It provides a secure channel for remote login, command execution, and data transfer
 
 - Allows us to connect to a remot linux server and execute commands on it.
 
