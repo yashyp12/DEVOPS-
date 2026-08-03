@@ -1160,3 +1160,6 @@ Secure Shell (SSH) is a cryptographic network protocol that allows secure commun
 - **Secure** → Communication is encrypted.
 - **Shell** → Provides remote command-line access to another computer.
 
+# More about SSH 
+
+- default port - 22
