@@ -1279,4 +1279,3 @@ ssh -T git@github.com
 (tests the SSH connection to GitHub and verifies authentication)
 ```
 
-```bash
