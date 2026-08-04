@@ -1279,3 +1279,8 @@ ssh -T git@github.com
 (tests the SSH connection to GitHub and verifies authentication)
 ```
 
+```bash
+git clone git@github.com:username/repository.git
+(clones a GitHub repository using SSH)
+```
+
