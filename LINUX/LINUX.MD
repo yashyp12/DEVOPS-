@@ -1286,3 +1286,30 @@ git clone git@github.com:username/repository.git
 
 # SSH Config
 SSH Config is a configuration file that stores predefined SSH connection settings, allowing you to connect to remote servers using short aliases instead of repeatedly typing full connection details.
+
+# how to generate config file
+
+```bash
+mkdir -p ~/.ssh
+touch ~/.ssh/config
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/config
+```
+
+```bash
+nano ~/.ssh/config
+(opens the SSH config file in the nano text editor)
+```
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519
+
+# Test
+```bash
+ssh -T git@github.com
+```
+
+
+
+
