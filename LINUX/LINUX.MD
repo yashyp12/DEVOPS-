@@ -1247,3 +1247,9 @@ The `~/.ssh` directory stores all SSH-related files.
 - Exists on the remote server
 - Stores users' public keys
 - Used for SSH key authentication
+
+# What is ssh-keygen?
+
+- ssh-keygen is a command used to generate an SSH public and private key pair for secure authentication.
+
+
