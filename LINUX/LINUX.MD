@@ -1272,3 +1272,11 @@ ls
 
 ```
 
+# clonining repo using ssh with github 
+
+```bash
+ssh -T git@github.com
+(tests the SSH connection to GitHub and verifies authentication)
+```
+
+```bash
