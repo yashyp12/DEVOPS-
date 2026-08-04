@@ -1252,4 +1252,23 @@ The `~/.ssh` directory stores all SSH-related files.
 
 - ssh-keygen is a command used to generate an SSH public and private key pair for secure authentication.
 
+# commands - 
+
+```bash
+ssh -V (displays the version of the SSH client installed on your system)
+```
+
+```bash
+ls -la ~/.ssh (lists the contents of the ~/.ssh directory, including hidden files)
+```
+
+```bash
+ssh-keygen (generates a new SSH key pair)
+```
+
+```bash
+cd ~/.ssh (moves to the ~/.ssh directory)
+ls
+
+```
 
