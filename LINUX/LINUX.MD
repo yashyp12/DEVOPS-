@@ -1358,6 +1358,23 @@ SFTP (SSH File Transfer Protocol) is a protocol that allows secure file manageme
 sftp user@remote_host
 sftp ubuntu@54.xx.xx.xx
 ```
+```bash
+ls (lists files and directories on the remote server)
 
+cd logs (changes the current directory on the remote server to "logs")
+
+put app.jar (uploads the local file "app.jar" to the current directory on the remote server)
+
+get log.txt (downloads the remote file "log.txt" to the local machine)
+
+put -r project (uploads the local directory "project" and its contents to the remote server)
+
+
+get -r project (downloads the remote directory "project" and its contents to the local machine)
+
+
+
+```
+ 
 
 
