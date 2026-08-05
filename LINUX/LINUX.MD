@@ -1383,6 +1383,23 @@ get -r project
 
 # SSH Troubleshooting 
 
+Error 1 — Permission denied (publickey)
+- Cause: The server does not recognize your public key.
+- Solution: Ensure your public key is added to the `~/.ssh/authorized_keys` file on the server.
+- Cause - Wrong private key
+- Solution - Use the correct private key with the `-i` option when connecting.
 
+
+Error 2 — Connection Timed Out
+- Cause: The server is unreachable or the SSH service is not running.
+- Solution: Check the server's IP address, ensure the SSH service is running, and verify that port 22 is open in the firewall.
+
+Error 3 — Connection Refused
+- Cause: The SSH service is not running on the server.
+- Solution: Start the SSH service on the server and ensure it is listening on port 22.
+
+Error 4 — Host Key Verification Failed
+- Cause: The server's host key has changed or is not recognized.
+- Solution: Remove the old host key from the `~/.ssh/known_hosts` file and reconnect to the server to accept the new host key.
 
 
