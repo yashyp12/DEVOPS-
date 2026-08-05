@@ -1378,8 +1378,11 @@ put -r project
 get -r project 
 (downloads the remote directory "project" and its contents to the local machine)
 
-
 ```
  
+
+# SSH Troubleshooting 
+
+
 
 
