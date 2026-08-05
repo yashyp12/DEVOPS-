@@ -1343,4 +1343,21 @@ scp ubuntu@IP:/home/ubuntu/file.txt .
 scp -r project ubuntu@IP:/home/ubuntu/ 
 
 (securely copies the entire "project" directory from the local machine to the specified path on the remote host)
+
 ```
+
+# What is SFTP?
+SFTP (SSH File Transfer Protocol) is a protocol that allows secure file management and file transfer over an SSH connection.
+
+
+# Commands and setup
+
+- Start SFTP session
+
+```bash
+sftp user@remote_host
+sftp ubuntu@54.xx.xx.xx
+```
+
+
+
