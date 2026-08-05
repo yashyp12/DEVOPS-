@@ -1119,7 +1119,7 @@ rm -rf !(companies.txt)
 
 ### What is PATH?
 
-PATH is an environment variable                 that stores directories where the shell searches for executable commands.
+PATH is an environment variable that stores directories where the shell searches for executable commands.
 
 ``` bash
 - yp@Yp:~$ export NAME= "yASH"
