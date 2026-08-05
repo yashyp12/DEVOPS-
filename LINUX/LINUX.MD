@@ -1310,8 +1310,37 @@ Host github.com
 ssh -T git@github.com
 ```
 
+
 # SCP (Secure Copy Protocol)
 
 SCP (Secure Copy Protocol) is a command-line utility that securely transfers files and directories between two computers over SSH.
 
+- SSH encrypts everything.
+- Port 22, because SCP runs over SSH.
 
+#  Commands
+
+Copy a file from local machine to remote server:
+```bash
+scp file.txt user@remote_host:/path/to/destination 
+
+(securely copies file.txt from the local machine to the specified path on the remote host)
+```
+
+- Upload file
+```bash
+scp file.txt ubuntu@IP:/home/ubuntu/
+```
+
+- Download file
+```bash
+scp ubuntu@IP:/home/ubuntu/file.txt /local/destination/
+scp ubuntu@IP:/home/ubuntu/file.txt .
+```
+
+- Upload Folder 
+```bash
+scp -r project ubuntu@IP:/home/ubuntu/ 
+
+(securely copies the entire "project" directory from the local machine to the specified path on the remote host)
+```
