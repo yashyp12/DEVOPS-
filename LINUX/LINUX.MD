@@ -1310,6 +1310,8 @@ Host github.com
 ssh -T git@github.com
 ```
 
+# SCP (Secure Copy Protocol)
 
+SCP (Secure Copy Protocol) is a command-line utility that securely transfers files and directories between two computers over SSH.
 
 
