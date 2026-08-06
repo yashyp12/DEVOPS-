@@ -1405,4 +1405,12 @@ Error 4 — Host Key Verification Failed
 
 
 
+# How to use SSH ?
+
+- To use ssh service must be installed on Linux server and client machine.
+
+```bash
+sudo apt install openssh-server
+sudo apt install openssh-client
+```
 
