@@ -1384,6 +1384,7 @@ get -r project
 # SSH Troubleshooting 
 
 Error 1 — Permission denied (publickey)
+
 - Cause: The server does not recognize your public key.
 - Solution: Ensure your public key is added to the `~/.ssh/authorized_keys` file on the server.
 - Cause - Wrong private key
@@ -1401,5 +1402,7 @@ Error 3 — Connection Refused
 Error 4 — Host Key Verification Failed
 - Cause: The server's host key has changed or is not recognized.
 - Solution: Remove the old host key from the `~/.ssh/known_hosts` file and reconnect to the server to accept the new host key.
+
+
 
 
