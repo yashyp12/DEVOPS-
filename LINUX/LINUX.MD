@@ -1414,3 +1414,10 @@ sudo apt install openssh-server
 sudo apt install openssh-client
 ```
 
+- enable ssh 
+
+```bash
+sudo systemctl enable ssh
+sudo systemctl start ssh
+```
+
