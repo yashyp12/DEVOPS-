@@ -1425,3 +1425,23 @@ sudo systemctl enable ssh (enables the SSH service to start automatically on sys
 sudo systemctl start ssh  (starts the SSH service immediately) 
 ```
 
+```bash
+sudo systemctl restart ssh (restarts the SSH service to apply any configuration changes)
+```
+
+```bash
+sudo systemctl stop ssh
+```
+
+## Connect to Remote Server
+```bash     
+ssh username@server-ip
+```
+
+- Using a private key 
+```bash
+ssh -i mykey.pem ubuntu@54.210.xx.xx
+```
+
+
+
