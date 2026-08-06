@@ -1410,14 +1410,18 @@ Error 4 — Host Key Verification Failed
 - To use ssh service must be installed on Linux server and client machine.
 
 ```bash
-sudo apt install openssh-server
-sudo apt install openssh-client
+sudo apt install openssh-server (installs the SSH server on the remote machine)
+```
+
+```bash
+sudo apt install openssh-client  (installs the SSH client on the local machine)
 ```
 
 - enable ssh 
 
 ```bash
-sudo systemctl enable ssh
-sudo systemctl start ssh
+sudo systemctl enable ssh (enables the SSH service to start automatically on system boot)
+
+sudo systemctl start ssh  (starts the SSH service immediately) 
 ```
 
