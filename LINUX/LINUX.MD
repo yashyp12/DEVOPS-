@@ -1462,6 +1462,18 @@ ssh-copy-id -i ~/.ssh/id_ed25519.pub username@server-ip
 
  
  - connecting to the ec2 instance using ssh 
+ - steps to connect to the ec2 instance using ssh
+1. Open your terminal.
+2. Navigate to the directory where your private key file (e.g., `mykey.pem`) is located.
+3. Change the permissions of the private key file to be read-only by the owner:
+   ```bash
+   chmod 400 mykey.pem
+   ```
+4. Use the SSH command to connect to your EC2 instance, replacing `ubuntu` with your instance's username and `54.210.xx.xx` with your instance's public IP address:
+
+5. Once connected, you can execute commands on the EC2 instance as if you were using a local terminal.
+
+6. To disconnect from the EC2 instance, type `exit` and press Enter.
 
  ``` bash
  ssh -i "mykey.pem" ubuntu@54.210.xx.xx
