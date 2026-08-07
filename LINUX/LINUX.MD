@@ -1433,6 +1433,13 @@ sudo systemctl restart ssh (restarts the SSH service to apply any configuration 
 sudo systemctl stop ssh
 ```
 
+### Check SSH Status
+
+```bash
+sudo systemctl status ssh
+```
+
+
 ## Connect to Remote Server
 ```bash     
 ssh username@server-ip
