@@ -1450,5 +1450,9 @@ ssh username@server-ip
 ssh -i mykey.pem ubuntu@54.210.xx.xx
 ```
 
+- Copy public key to remote server
 
+```bash
+ssh-copy-id -i ~/.ssh/id_ed25519.pub username@server-ip
+```
 
