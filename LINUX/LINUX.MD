@@ -1456,3 +1456,15 @@ ssh -i mykey.pem ubuntu@54.210.xx.xx
 ssh-copy-id -i ~/.ssh/id_ed25519.pub username@server-ip
 ```
 
+# practice on AWS EC2 Instance
+
+- Guide to create an EC2 instance and connect to it using SSH:
+
+- **Step 1: Launch an EC2 Instance**
+1. Log in to your AWS Management Console.
+2. Navigate to the EC2 service.
+3. Click on "Launch Instance."
+4. Choose an Amazon Machine Image (AMI), such as Ubuntu Server.
+5. Select an instance type (e.g., t2.micro for free tier).
+6. Configure instance details, add storage, and configure security groups (allow SSH on port 22).
+7. Review and launch the instance.
