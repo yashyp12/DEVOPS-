@@ -1483,7 +1483,7 @@ ssh -v (enables verbose mode to display detailed information about the SSH conne
 
 - TCP Connection Test 
 
-
 ```bash
  Test-NetConnection 65.2.150.54 -Port 22                
- ```
+ ``` 
+ (tests the TCP connection to the specified IP address on port 22, which is used for SSH)
