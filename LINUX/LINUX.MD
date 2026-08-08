@@ -1481,5 +1481,4 @@ ssh-copy-id -i ~/.ssh/id_ed25519.pub username@server-ip
 ssh -v (enables verbose mode to display detailed information about the SSH connection process)
 ```
 
--
-
+- 
