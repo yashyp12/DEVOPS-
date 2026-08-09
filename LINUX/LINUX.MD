@@ -1516,3 +1516,8 @@ Host aws-dev
   User ubuntu
   IdentityFile ~/.ssh/devops-lab-key.pem
 ```
+
+- aws cli setup
+```bash
+sudo apt install awscli
+aws configure
