@@ -1487,3 +1487,13 @@ ssh -v (enables verbose mode to display detailed information about the SSH conne
  Test-NetConnection 65.2.150.54 -Port 22                
  ``` 
  (tests the TCP connection to the specified IP address on port 22, which is used for SSH)
+
+
+Q1. Explain the SSH login process.
+
+SSH first establishes a TCP connection on Port 22 using the TCP 3-way handshake. 
+
+Next, the client and server negotiate encryption algorithms through the SSH key exchange. The client verifies the server's identity using the host key stored in known_hosts. 
+
+Then the client proves ownership of its private key, while the server compares the corresponding public key in authorized_keys. If authentication succeeds, an encrypted interactive shell session is established.
+
