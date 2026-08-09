@@ -1498,5 +1498,10 @@ Next, the client and server negotiate encryption algorithms through the SSH key 
 Then the client proves ownership of its private key, while the server compares the corresponding public key in authorized_keys. If authentication succeeds, an encrypted interactive shell session is established.
 
 - steps
+``` bash
+cd ~/.ssh
+
+ssh -i ~/.ssh/devops-lab-key.pem ubuntu@65.2.150.54
+```
 
 
