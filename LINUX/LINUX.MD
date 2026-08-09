@@ -1504,4 +1504,15 @@ cd ~/.ssh
 ssh -i ~/.ssh/devops-lab-key.pem ubuntu@65.2.150.54
 ```
 
+- Setting up .config file for SSH shortcuts
 
+```bash
+nano ~/.ssh/config
+```
+
+```bash
+Host aws-dev
+  HostName 65.2.150.54
+  User ubuntu
+  IdentityFile ~/.ssh/devops-lab-key.pem
+```
