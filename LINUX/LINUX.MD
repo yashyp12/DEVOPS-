@@ -1521,3 +1521,11 @@ Host aws-dev
 ```bash
 sudo apt install awscli
 aws configure
+
+- autoamted the aws cli setup using bash script
+
+```bash
+aws-start
+aws-stop
+aws-status
+```
