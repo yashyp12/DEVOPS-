@@ -1502,6 +1502,8 @@ Then the client proves ownership of its private key, while the server compares t
 cd ~/.ssh
 
 ssh -i ~/.ssh/devops-lab-key.pem ubuntu@65.2.150.54
+
+ssh aws-dev
 ```
 
 - Setting up .config file for SSH shortcuts
@@ -1529,3 +1531,10 @@ aws-start
 aws-stop
 aws-status
 ```
+
+# Basic task 
+
+``` bash 
+wc -l file.txt (counts the number of lines in file.txt)
+head -2 logs/app.log (displays the first 2 lines of logs/app.log)
+
