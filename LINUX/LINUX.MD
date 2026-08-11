@@ -1560,3 +1560,17 @@ ps aux | grep nginx (displays all running processes and filters for those relate
 a	Show processes of all users
 u	Show detailed information (owner, CPU, memory, etc.)
 x	Show background processes too
+
+systemctl status nginx (displays the status of the nginx service, including whether it is active, inactive, or failed)
+
+```
+
+# 1 - Lease Previlege Principle
+The principle of least privilege is a security concept that states that users, applications, and systems should be granted the minimum level of access or permissions necessary to perform their tasks. 
+
+>This approach helps reduce the risk of unauthorized access, data breaches, and potential damage caused by accidental or malicious actions.
+
+
+
+
+
