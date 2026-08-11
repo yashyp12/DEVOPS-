@@ -1538,3 +1538,11 @@ aws-status
 wc -l file.txt (counts the number of lines in file.txt)
 head -2 logs/app.log (displays the first 2 lines of logs/app.log)
 
+``` bash
+grep "error" logs/app.log (searches for the word "error" in logs/app.log and displays matching lines)
+
+grep -i "error" logs/app.log (searches for the word "error" in a case-insensitive manner in logs/app.log and displays matching lines)
+
+grep -r "error" logs/ (searches for the word "error" recursively in all files within the logs/ directory and displays matching lines)
+
+grep -c "error" logs/app.log (counts the number of occurrences of the word "error" in logs/app.log)
