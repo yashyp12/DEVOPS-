@@ -1553,4 +1553,10 @@ grep -c "error" logs/app.log (counts the number of occurrences of the word "erro
 chmod 755 script.sh (sets read, write, and execute permissions for the owner, and read and execute permissions for the group and others on script.sh)
 
 ```
+- Processes 
+``` bash
+ps aux | grep nginx (displays all running processes and filters for those related to "nginx")
 
+a	Show processes of all users
+u	Show detailed information (owner, CPU, memory, etc.)
+x	Show background processes too
