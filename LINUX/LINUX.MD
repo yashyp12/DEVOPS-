@@ -1546,3 +1546,11 @@ grep -i "error" logs/app.log (searches for the word "error" in a case-insensitiv
 grep -r "error" logs/ (searches for the word "error" recursively in all files within the logs/ directory and displays matching lines)
 
 grep -c "error" logs/app.log (counts the number of occurrences of the word "error" in logs/app.log)
+
+- Permissions 
+
+``` bash
+chmod 755 script.sh (sets read, write, and execute permissions for the owner, and read and execute permissions for the group and others on script.sh)
+
+```
+
