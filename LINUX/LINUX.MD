@@ -1611,5 +1611,7 @@ JSON
 
 
 
-
+aws ec2 describe-instances
+aws ec2 stop-instances --instance-ids <your-instance-id>
+aws ec2 start-instances --instance-ids <your-instance-id>
 
