@@ -1567,8 +1567,11 @@ systemctl status nginx (displays the status of the nginx service, including whet
 uname -a (displays detailed information about the system, including kernel version, hostname, and architecture)
 
 uname -r (displays the kernel release version)
-```
 
+echo $SHELL (displays the current shell being used)   
+
+mkdir app-$(date +%F) (creates a directory named "app-" followed by the current date in YYYY-MM-DD format)
+```
 
 
 # 1 - Lease Previlege Principle
