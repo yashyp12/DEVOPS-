@@ -1563,12 +1563,20 @@ x	Show background processes too
 
 systemctl status nginx (displays the status of the nginx service, including whether it is active, inactive, or failed)
 
+
+uname -a (displays detailed information about the system, including kernel version, hostname, and architecture)
+
+uname -r (displays the kernel release version)
 ```
+
+
 
 # 1 - Lease Previlege Principle
 The principle of least privilege is a security concept that states that users, applications, and systems should be granted the minimum level of access or permissions necessary to perform their tasks. 
 
 >This approach helps reduce the risk of unauthorized access, data breaches, and potential damage caused by accidental or malicious actions.
+
+
 
 
 
