@@ -1579,7 +1579,35 @@ The principle of least privilege is a security concept that states that users, a
 
 >This approach helps reduce the risk of unauthorized access, data breaches, and potential damage caused by accidental or malicious actions.
 
+- > Setup New Policy for user
 
+IAM
+↓
+Policies
+↓
+Create Policy
+↓
+JSON
+
+``` bash
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "EC2TerminalPractice",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:RebootInstances"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+(This policy allows the user to describe, start, stop, and reboot EC2 instances, but does not grant permissions for other actions such as terminating instances or modifying security groups.)
 
 
 
