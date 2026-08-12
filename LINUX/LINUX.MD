@@ -1539,13 +1539,11 @@ wc -l file.txt (counts the number of lines in file.txt)
 head -2 logs/app.log (displays the first 2 lines of logs/app.log)
 
 ``` bash
-grep "error" logs/app.log (searches for the word "error" in logs/app.log and displays matching lines)
-
-grep -i "error" logs/app.log (searches for the word "error" in a case-insensitive manner in logs/app.log and displays matching lines)
-
-grep -r "error" logs/ (searches for the word "error" recursively in all files within the logs/ directory and displays matching lines)
-
-grep -c "error" logs/app.log (counts the number of occurrences of the word "error" in logs/app.log)
+grep        → show matching lines
+grep -c     → count matches
+grep -i     → ignore case
+grep -n     → show line numbers
+grep -r     → recursive search
 
 - Permissions 
 
@@ -1571,6 +1569,8 @@ uname -r (displays the kernel release version)
 echo $SHELL (displays the current shell being used)   
 
 mkdir app-$(date +%F) (creates a directory named "app-" followed by the current date in YYYY-MM-DD format)
+
+cat /etc/os-release (displays information about the operating system, including name, version, and ID)
 ```
 
 
