@@ -1610,8 +1610,11 @@ JSON
 (This policy allows the user to describe, start, stop, and reboot EC2 instances, but does not grant permissions for other actions such as terminating instances or modifying security groups.)
 
 
-
+``` bash
 aws ec2 describe-instances
 aws ec2 stop-instances --instance-ids <your-instance-id>
 aws ec2 start-instances --instance-ids <your-instance-id>
+(check attached iam polcies for user)
+aws iam list-attached-user-policies --user-name devops-cli
+```
 
