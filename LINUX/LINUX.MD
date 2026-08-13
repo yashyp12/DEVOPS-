@@ -1661,6 +1661,12 @@ aws iam list-attached-user-policies --user-name devops-cli
 # Package Manager  - 
 
 1) dpkg - Debian Package Manager (used in Debian-based distributions like Ubuntu)
+
+```bash
+sudo dpkg -i package.deb (installs a .deb package)
+sudo dpkg -r package_name (removes an installed package)
+```
+
 2) apt - Advanced Package Tool (used in Debian-based distributions like Ubuntu)
 3) rpm - Red Hat Package Manager (used in Red Hat-based distributions like CentOS and
 
