@@ -1673,6 +1673,26 @@ sudo dpkg -r package_name (removes an installed package)
 sudo apt install package_name (installs a package from the repository)
 sudo apt remove package_name (removes an installed package)
 
+apt update (updates the package index to retrieve the latest information about available packages and their versions)
+```
+
+- apt relies on repository 
+
+What happens when you run `apt update`?
+
+When you run `apt update`,
+1) the package manager connects to the configured repositories and retrieves the latest package lists. 
+
+2) It updates the local package index with information about available packages, their versions, and dependencies. 
+
+3) This ensures that when you install or upgrade packages, you are using the most recent versions available in the repositories.  
+
+
+``` bash
+sudo apt edit-sources (opens the sources.list file in a text editor, allowing you to modify the list of repositories used by apt)
+```
+
+
 
 3) rpm - Red Hat Package Manager (used in Red Hat-based distributions like CentOS 
 
