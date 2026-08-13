@@ -1623,3 +1623,9 @@ aws ec2 start-instances --instance-ids <your-instance-id>
 (check attached iam polcies for user)
 aws iam list-attached-user-policies --user-name devops-cli
 ```
+
+
+# Package Management
+
+> Cetralized system for installing, updating, and removing software packages on Linux systems.
+
