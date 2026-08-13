@@ -623,6 +623,13 @@ mv file1.txt file2.txt
 mv notes.txt Documents/
 ```
 
+To move multiple files into another directory, list the files before the destination folder.
+
+```bash
+mv file1.txt file2.txt file3.txt backup/
+mv *.txt Documents/
+```
+
 mv can also be use to rename a file or directory.
 
 ```bash     
@@ -650,7 +657,6 @@ Allows a permitted user to execute a command as the superuser or another user.
 sudo
 
 ```
-
 ## df
 ### Definition
 Displays disk space usage of file systems.
@@ -1617,4 +1623,3 @@ aws ec2 start-instances --instance-ids <your-instance-id>
 (check attached iam polcies for user)
 aws iam list-attached-user-policies --user-name devops-cli
 ```
-
