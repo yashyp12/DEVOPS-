@@ -1629,3 +1629,18 @@ aws iam list-attached-user-policies --user-name devops-cli
 
 > Cetralized system for installing, updating, and removing software packages on Linux systems.
 
+# Components of  Package Management
+
+1 - Package - compressed file that contains software, libraries, and metadata required for installation and management.
+
+2 - Package Manager - a tool or utility that handles the installation, updating, and removal of software packages on a Linux system.
+
+3 - Repository - a centralized storage location that hosts software packages and their metadata, allowing users to download and install them using a package manager.
+
+4 - Dependency Resolution - the process of automatically identifying and installing any additional packages or libraries required for a software package to function correctly.
+
+5 - Package Database - a local database that keeps track of installed packages, their versions, and dependencies on a Linux system.
+
+6 - Package Format - the specific file format used for packaging software, which varies between different Linux distributions (e.g., .deb for Debian-based systems, .rpm for Red Hat-based systems).
+
+7 - Package Signing - a security mechanism that uses cryptographic signatures to verify the authenticity and integrity of software packages before installation.
