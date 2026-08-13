@@ -1579,6 +1579,21 @@ mkdir app-$(date +%F) (creates a directory named "app-" followed by the current 
 cat /etc/os-release (displays information about the operating system, including name, version, and ID)
 ```
 
+# Access Windows directories from WSL
+/mnt is a mount point in Linux.
+
+
+```bash
+cd /mnt/c (Windows C: drive)
+cd /mnt/d (Windows D: drive)
+```
+
+
+
+
+
+
+
 
 # 1 - Lease Previlege Principle
 The principle of least privilege is a security concept that states that users, applications, and systems should be granted the minimum level of access or permissions necessary to perform their tasks. 
