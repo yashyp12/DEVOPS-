@@ -1668,6 +1668,12 @@ sudo dpkg -r package_name (removes an installed package)
 ```
 
 2) apt - Advanced Package Tool (used in Debian-based distributions like Ubuntu)
-3) rpm - Red Hat Package Manager (used in Red Hat-based distributions like CentOS and
+
+```bash
+sudo apt install package_name (installs a package from the repository)
+sudo apt remove package_name (removes an installed package)
+
+
+3) rpm - Red Hat Package Manager (used in Red Hat-based distributions like CentOS 
 
 
