@@ -1589,10 +1589,7 @@ cd /mnt/d (Windows D: drive)
 ```
 
 
-
-
-
-
+ 
 
 
 # 1 - Lease Previlege Principle
@@ -1659,3 +1656,12 @@ aws iam list-attached-user-policies --user-name devops-cli
 6 - Package Format - the specific file format used for packaging software, which varies between different Linux distributions (e.g., .deb for Debian-based systems, .rpm for Red Hat-based systems).
 
 7 - Package Signing - a security mechanism that uses cryptographic signatures to verify the authenticity and integrity of software packages before installation.
+
+
+# Package Manager  - 
+
+1) dpkg - Debian Package Manager (used in Debian-based distributions like Ubuntu)
+2) apt - Advanced Package Tool (used in Debian-based distributions like Ubuntu)
+3) rpm - Red Hat Package Manager (used in Red Hat-based distributions like CentOS and
+
+
