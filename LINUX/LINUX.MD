@@ -1694,6 +1694,6 @@ sudo apt edit-sources (opens the sources.list file in a text editor, allowing yo
 
 
 
-3) rpm - Red Hat Package Manager (used in Red Hat-based distributions like CentOS 
+3) rpm - Red Hat Package Manager (used in Red Hat-based distributions ) .
 
 
