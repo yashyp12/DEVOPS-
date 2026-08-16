@@ -1756,6 +1756,26 @@ get file.txt (downloads file.txt from the remote server to the local machine)
 get -r folder (downloads the entire folder and its contents from the remote server to the local machine)
 ```
 
+# BASH SCRIPTING 
+(Bash scripting is a way to automate tasks and execute commands in the Bash shell using a series of commands written in a script file.)
+
+# Topics Covered: 
+- Introduction to Bash Scripting
+- Creating and Running Bash Scripts
+- Variables and Data Types
+- Conditional Statements (if, else, elif)
+- Loops (for, while, until)
+
+
+```bash
+nano hello.sh (creates a new Bash script file named hello.sh and opens it in the nano text editor)
+
+" echo "Hello, World!"  
+
+chmod +x hello.sh (makes the hello.sh script executable)
+
+./hello.sh (runs the hello.sh script)
+```
 
 
 
