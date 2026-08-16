@@ -1727,8 +1727,13 @@ ps aux | grep nginx ( Lists all running processes and filters for "nginx").
 sudo lsof -i :80 (lists open files and network connections associated with port 80, which is commonly used for HTTP traffic)
 ```
 
-# SCP 
+# SCP - Secure Copy Protocol
 
+Copies files/directories between your local machine and a remote Linux server over SSH.
+
+```bash
+scp test.txt aws-dev:/home/ubuntu/
+```
 
 
 
