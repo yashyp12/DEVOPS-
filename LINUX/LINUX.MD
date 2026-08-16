@@ -1719,8 +1719,13 @@ sudo apt autoremove (removes unnecessary packages that were automatically instal
 
 sudo apt purge nginx (removes the nginx package along with its configuration files)
 
+tail -f -n 20 script.sh (displays the last 20 lines of script.sh and continues to monitor the file for new lines in real-time)
 
+
+ps aux | grep nginx ( Lists all running processes and filters for "nginx").
+      
 ```
+
 
 
 
