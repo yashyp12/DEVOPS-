@@ -1723,8 +1723,13 @@ tail -f -n 20 script.sh (displays the last 20 lines of script.sh and continues t
 
 
 ps aux | grep nginx ( Lists all running processes and filters for "nginx").
-      
+
+sudo lsof -i :80 (lists open files and network connections associated with port 80, which is commonly used for HTTP traffic)
 ```
+
+# SCP 
+
+
 
 
 
