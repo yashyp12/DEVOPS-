@@ -1699,6 +1699,10 @@ sudo apt edit-sources -
 sudo apt upgrade (upgrades all installed packages to their latest versions based on the updated package index)
 
 sudo apt -h (help command for apt, displays available options and usage information)
+
+sudo apt list (lists all available packages in the repositories)
+
+sudo apt --installed (lists all installed packages on the system)
 ```
 
 
