@@ -1703,6 +1703,11 @@ sudo apt -h (help command for apt, displays available options and usage informat
 sudo apt list (lists all available packages in the repositories)
 
 sudo apt --installed (lists all installed packages on the system)
+
+sudo apt show package_name (displays detailed information about a specific package, including its version, dependencies, and description)
+
+
+sudo apt remove package_name (removes an installed package and its configuration files)
 ```
 
 
