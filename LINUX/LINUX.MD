@@ -1777,6 +1777,9 @@ chmod +x hello.sh (makes the hello.sh script executable)
 ./hello.sh (runs the hello.sh script)
 ```
 
+> Shebang (#!)  - is a special line at the beginning of a script that specifies the interpreter to be used for executing the script. It tells the system which program should be used to run the script.
+
+
 
 
 
