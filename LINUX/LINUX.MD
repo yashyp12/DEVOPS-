@@ -1688,9 +1688,19 @@ When you run `apt update`,
 3) This ensures that when you install or upgrade packages, you are using the most recent versions available in the repositories.  
 
 ``` bash
-sudo apt edit-sources (opens the sources.list file in a text editor, allowing you to modify the list of repositories used by apt)
+sudo apt edit-sources - 
+
+ (opens the sources.list file in a text editor, allowing you to modify the list of repositories used by apt)
 ```
 
 3) rpm - Red Hat Package Manager (used in Red Hat-based distributions ) .
+
+``` bash
+sudo apt upgrade (upgrades all installed packages to their latest versions based on the updated package index)
+
+sudo apt -h (help command for apt, displays available options and usage information)
+```
+
+
 
 
