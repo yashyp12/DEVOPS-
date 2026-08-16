@@ -1698,6 +1698,8 @@ sudo apt edit-sources -
 ``` bash
 sudo apt upgrade (upgrades all installed packages to their latest versions based on the updated package index)
 
+sudo apt upgradable (lists packages that can be upgraded to newer versions)
+
 sudo apt -h (help command for apt, displays available options and usage information)
 
 sudo apt list (lists all available packages in the repositories)
@@ -1708,7 +1710,22 @@ sudo apt show package_name (displays detailed information about a specific packa
 
 
 sudo apt remove package_name (removes an installed package and its configuration files)
+
+sudo apt purge package_name (removes an installed package along with its configuration files)
+
+sudo apt full-upgrade (upgrades all installed packages, including those with new dependencies, and may remove obsolete packages)
+
+sudo apt autoremove (removes unnecessary packages that were automatically installed as dependencies but are no longer needed)
+
+sudo apt purge nginx (removes the nginx package along with its configuration files)
+
+
 ```
+
+
+
+
+
 
 
 
