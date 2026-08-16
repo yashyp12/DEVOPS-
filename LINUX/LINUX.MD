@@ -1756,7 +1756,7 @@ get file.txt (downloads file.txt from the remote server to the local machine)
 get -r folder (downloads the entire folder and its contents from the remote server to the local machine)
 ```
 
-# BASH SCRIPTING 
+# BASH SCRIPTING [BOURNE AGAIN SHELL]
 (Bash scripting is a way to automate tasks and execute commands in the Bash shell using a series of commands written in a script file.)
 
 # Topics Covered: 
@@ -1775,9 +1775,13 @@ nano hello.sh (creates a new Bash script file named hello.sh and opens it in the
 chmod +x hello.sh (makes the hello.sh script executable)
 
 ./hello.sh (runs the hello.sh script)
+
+bash hello.sh (runs the hello.sh script using the Bash interpreter)
 ```
 
 > Shebang (#!)  - is a special line at the beginning of a script that specifies the interpreter to be used for executing the script. It tells the system which program should be used to run the script.
+
+
 
 
 
