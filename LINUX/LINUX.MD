@@ -1735,6 +1735,30 @@ Copies files/directories between your local machine and a remote Linux server ov
 scp test.txt aws-dev:/home/ubuntu/
 ```
 
+# SFTP - Secure File Transfer Protocol
+
+sftp is a secure file transfer protocol that allows you to transfer files between your local machine and a remote Linux server over SSH.
+
+```bash
+sftp aws-dev (initiates an SFTP session with the remote server)
+
+lls (lists files in the local directory)
+
+- (prefix with l to run commands on the local machine)
+lpwd (displays the current working directory on the local machine)
+
+put file.txt (uploads file.txt from the local machine to the remote server)
+
+put -r folder (uploads the entire folder and its contents from the local machine to the remote server)
+
+get file.txt (downloads file.txt from the remote server to the local machine)
+
+get -r folder (downloads the entire folder and its contents from the remote server to the local machine)
+```
+
+
+
+
 
 
 
