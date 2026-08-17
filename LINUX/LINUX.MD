@@ -1805,6 +1805,18 @@ read name
 echo "hello world what are you doing $name"
 ```
 
+> POSITIONAL PARAMETERS - Positional parameters are variables that hold the values of command-line arguments passed to a script or function. They are accessed using the `$` symbol followed by a number, where `$1` represents the first argument, `$2` the second, and so on.
+
+```bash     
+#!/bin/bash
+echo "Script name: $0"
+echo "First argument: $1"
+echo "Second argument: $2"
+
+-> 
+./file.sh arg1 arg2
+```
+
 
 
 
