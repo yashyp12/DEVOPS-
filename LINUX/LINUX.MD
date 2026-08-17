@@ -1786,6 +1786,24 @@ bash hello.sh (runs the hello.sh script using the Bash interpreter)
 
 > Variables :  A variable is a named place (container) in a script used to store a value.
 
+```bash
+#!/bin/bash
+name="Yash"
+echo "hello world what are you doing $USER"
+```
+
+> read - is a built-in command in Bash that allows you to read input from the user and store it in a variable.
+
+```bash     
+read -p "Enter your name: " name
+echo "Hello, $name!"
+```
+
+```bash
+echo "What is your name "
+read name
+echo "hello world what are you doing $name"
+```
 
 
 
