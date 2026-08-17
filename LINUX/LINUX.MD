@@ -1782,9 +1782,9 @@ bash hello.sh (runs the hello.sh script using the Bash interpreter)
 > Shebang (#!)  - is a special line at the beginning of a script that specifies the interpreter to be used for executing the script. It tells the system which program should be used to run the script.
 
 
+# 2. Variables & Environment Variables
 
-
-
+> Variables :  A variable is a named place (container) in a script used to store a value.
 
 
 
