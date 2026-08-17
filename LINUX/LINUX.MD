@@ -1842,8 +1842,16 @@ export name="Yash"
 - The export command only passes variables down to new programs started inside that specific window. 
 - It cannot pass variables sideways to other windows or up to the system.
 
+-  Create a child shell process by simply typing -> bash
 
 
+> How to make environment variables permanent?
+- To make environment variables permanent, you can add them to your shell's configuration file (e.g., `~/.bashrc`, `~/.bash_profile`, or `~/.profile` for Bash). This way, the variables will be set automatically every time you start a new shell session.
+
+```bash
+# Add the following line to your shell configuration file
+echo 'export name="Yash"' >> ~/.bashrc
+```
 
 
 
