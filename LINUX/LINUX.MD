@@ -1813,11 +1813,34 @@ echo "Script name: $0"
 echo "First argument: $1"
 echo "Second argument: $2"
 
--> 
 ./file.sh arg1 arg2
 ```
 
+# 2 Environment Variables
+```bash
+$USER
+$HOME
+$PATH
+```
 
+- These are environment variables provided to processes by the shell/environment.
+
+
+> Local Shell Variables -
+```bash 
+name="Yash"
+```
+- Available only in the current shell session.
+
+> Exported environment variable
+```bash
+export name="Yash"
+```
+
+- Environment variables set with export are temporary because they only exist in the memory of that specific terminal session.
+
+- The export command only passes variables down to new programs started inside that specific window. 
+- It cannot pass variables sideways to other windows or up to the system.
 
 
 
