@@ -1893,4 +1893,13 @@ echo $RANDOM - generates a random number between 0 and 32767 each time it is ref
 # Script
 beast = $((#RANDOM % 2)) (generates a random number between 0 and 1, simulating a coin flip)
 
-read -p "Pick a number between 0 and 1: " user_pick
+read -p "Pick a number between 0 and 1: " user_pick 
+
+if [[ $user_pick == $beast ]]; then
+      echo "You guessed it right! The random number was $beast."
+else
+      echo "Sorry, you guessed wrong. The random number was $beast."
+fi
+```
+
+
