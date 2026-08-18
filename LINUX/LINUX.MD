@@ -1869,7 +1869,9 @@ date=$(date +%F)
 ) > greeting.txt
 ```
 
+# Bash Conditionals 
 
+bash conditionals allow you to make decisions in your scripts based on certain conditions. The most common conditional statements are `if`, `else`, and `elif`.
 
 
 
