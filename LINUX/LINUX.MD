@@ -1887,3 +1887,7 @@ fi
 ```
 
 
+```bash
+echo $RANDOM - generates a random number between 0 and 32767 each time it is referenced .
+
+
