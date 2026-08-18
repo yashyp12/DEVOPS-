@@ -1853,12 +1853,22 @@ export name="Yash"
 echo 'export name="Yash"' >> ~/.bashrc
 ```
 
+# Command Substitution
+
+Command substitution runs a command and stores its output in a variable.
+
+>variable=$(command)
+
+
+
+
 ```bash
 user=$(whoami)
 date=$(date +%F)
 (echo "Hello, $user! Today is $date."
 ) > greeting.txt
 ```
+
 
 
 
