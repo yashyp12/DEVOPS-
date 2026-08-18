@@ -1890,4 +1890,7 @@ fi
 ```bash
 echo $RANDOM - generates a random number between 0 and 32767 each time it is referenced .
 
+# Script
+beast = $((#RANDOM % 2)) (generates a random number between 0 and 1, simulating a coin flip)
 
+read -p "Pick a number between 0 and 1: " user_pick
