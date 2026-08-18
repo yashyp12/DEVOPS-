@@ -1873,5 +1873,17 @@ date=$(date +%F)
 
 bash conditionals allow you to make decisions in your scripts based on certain conditions. The most common conditional statements are `if`, `else`, and `elif`.
 
+```bash
+#!/bin/bash
+read -p "Hey do you like coffee ? (yes/no): " answer
+
+if [[ "$answer" == "yes" ]]; then
+    echo "Great! Coffee is awesome."
+elif [[ "$answer" == "no" ]]; then
+    echo "No worries! Tea is also good."
+else
+    echo "Please answer with 'yes' or 'no'."
+fi
+```
 
 
