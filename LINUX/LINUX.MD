@@ -1853,6 +1853,12 @@ export name="Yash"
 echo 'export name="Yash"' >> ~/.bashrc
 ```
 
+```bash
+user=$(whoami)
+date=$(date +%F)
+(echo "Hello, $user! Today is $date."
+) > greeting.txt
+```
 
 
 
