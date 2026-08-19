@@ -1910,4 +1910,11 @@ fi
 [[ -d "my_directory" ]] && echo "Directory exists." || echo "Directory does not exist."
 ```
 
+> Check whether a file is readable
+```bash
+[[ -r "file.txt" ]] && echo "File is readable." || echo "File is not readable."
+```
+
+
+
 
