@@ -1900,4 +1900,7 @@ else
 fi
 ```
 
-
+> Check whether a file exists
+```bash
+[[ -f "file.txt" ]] && echo "File exists." || echo "File does not exist."
+```
