@@ -1915,6 +1915,12 @@ fi
 [[ -r "file.txt" ]] && echo "File is readable." || echo "File is not readable."
 ```
 
+> [ ] vs [[ ]]
+
+- `[ ]` is the traditional test command in Bash, while `[[ ]]` is an extended version that provides additional features and improved syntax.
+
+
+
 
 
 
