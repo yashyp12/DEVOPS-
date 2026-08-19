@@ -1860,8 +1860,6 @@ Command substitution runs a command and stores its output in a variable.
 >variable=$(command)
 
 
-
-
 ```bash
 user=$(whoami)
 date=$(date +%F)
