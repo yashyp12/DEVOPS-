@@ -1904,3 +1904,10 @@ fi
 ```bash
 [[ -f "file.txt" ]] && echo "File exists." || echo "File does not exist."
 ```
+
+> Check whether a directory exists
+```bash
+[[ -d "my_directory" ]] && echo "Directory exists." || echo "Directory does not exist."
+```
+
+
