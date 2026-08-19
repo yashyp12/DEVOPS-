@@ -1918,6 +1918,9 @@ fi
 > [ ] vs [[ ]]
 
 - `[ ]` is the traditional test command in Bash, while `[[ ]]` is an extended version that provides additional features and improved syntax.
+- [[ ]] → Bash-specific conditional syntax
+- [[ ]] is generally preferred in Bash scripts
+- [[ ]] supports Bash features such as pattern matching
 
 
 
