@@ -1923,6 +1923,8 @@ fi
 - [[ ]] supports Bash features such as pattern matching
 
 
+- OR (||) and AND (&&) operators can be used within [[ ]] for combining multiple conditions.
+
 
 
 
