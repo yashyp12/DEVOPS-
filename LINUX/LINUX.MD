@@ -1926,6 +1926,9 @@ fi
 - OR (||) and AND (&&) operators can be used within [[ ]] for combining multiple conditions.
 
 
+# Bash Loops -
+> What is a loop?
+-> A loop repeatedly executes a block of commands while iterating over items or while a condition remains true.
 
 
 
