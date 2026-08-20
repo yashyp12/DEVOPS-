@@ -1931,4 +1931,10 @@ fi
 -> A loop repeatedly executes a block of commands while iterating over items or while a condition remains true.
 
 
+> for loop -> Use for when you want to repeat something for a known set of items.
 
+```bash
+for item in list ; do
+    commands
+done
+```
