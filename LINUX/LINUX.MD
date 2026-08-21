@@ -1933,6 +1933,7 @@ fi
 
 > for loop -> Use for when you want to repeat something for a known set of items.
 
+
 ```bash
 for item in list ; do
     commands
