@@ -1940,4 +1940,12 @@ for item in list ; do
 done
 ```
 
-# 
+# While Loop -> Use while when you want to repeat something while a condition is true.
+
+```bash
+while condition ; do
+    commands
+done
+```
+
+
