@@ -1948,4 +1948,8 @@ while condition ; do
 done
 ```
 
+# Lexical comparison -
 
+- lexical comparison means comparing values alphabetically (like words in a dictionary) instead of numerically (by their actual value).
+
+## How Lexical Comparison Works
