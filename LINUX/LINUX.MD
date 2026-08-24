@@ -1953,3 +1953,8 @@ done
 - lexical comparison means comparing values alphabetically (like words in a dictionary) instead of numerically (by their actual value).
 
 ## How Lexical Comparison Works
+
+- When comparing alphabetically, Bash evaluates characters from left to right based on their ASCII/Unicode values.
+
+> The Operator Rules in [[ ]] - Numerical (Numbers)-gt (Greater than)  -lt (Less than)  -eq (Equal to)[[ 100 -gt 2 ]]True (100 is bigger than 2)
+
