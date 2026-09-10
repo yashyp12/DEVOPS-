@@ -1948,6 +1948,19 @@ while condition ; do
 done
 ```
 
+Example : 
+```bash
+#!/bin/bash
+
+count=1
+
+while [[ $count -le 5 ]]; do
+        echo "Count : $count"
+        count=$((count + 1))
+done
+
+```
+
 # Lexical comparison -
 
 - lexical comparison means comparing values alphabetically (like words in a dictionary) instead of numerically (by their actual value).
@@ -1958,4 +1971,12 @@ done
 
 > The Operator Rules in [[ ]] - Numerical (Numbers)-gt (Greater than)  -lt (Less than)  -eq (Equal to)[[ 100 -gt 2 ]]True (100 is bigger than 2) .
 
-    
+
+# Functions - " functions are reusable blocks of code that perform a specific task and can be called multiple times within a script."
+
+```bash
+function_name() {
+    commands
+}
+```
+
