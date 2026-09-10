@@ -6,4 +6,5 @@ show_info() {
 	echo "Date: $(date)"
 }
 
+
 show_info
