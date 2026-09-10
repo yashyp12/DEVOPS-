@@ -1994,6 +1994,22 @@ show_info
 
 # Exit Status in Bash -
 
+> Exit status is a numeric value returned by a command or script to indicate its success or failure. In Bash, an exit status of 0 indicates success, while any non-zero value indicates an error or failure.
+
+### The rule
+
+```
+0       → success
+non-zero → failure
+```
+
+After a command runs, Bash stores its exit status in:
+
+```
+$?
+```
+
+
 
 
 
