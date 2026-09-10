@@ -1958,3 +1958,4 @@ done
 
 > The Operator Rules in [[ ]] - Numerical (Numbers)-gt (Greater than)  -lt (Less than)  -eq (Equal to)[[ 100 -gt 2 ]]True (100 is bigger than 2) .
 
+
