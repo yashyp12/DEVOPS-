@@ -2056,4 +2056,23 @@ echo "Script continues..."
 - Security → Hides the identity and structure of backend servers, providing an additional layer of security
 
 
+- HTTPS Termination - The reverse proxy can handle SSL/TLS encryption and decryption, offloading this resource-intensive task from the backend servers.
+
+- Routing → Directs requests to different backend servers based on URL paths, headers, or other criteria.
+
+- Caching → Stores frequently requested content to reduce load on backend servers and improve response times.
+
+
+## Forward Proxy - 
+> A forward proxy is a server that acts as an intermediary between clients and the internet, forwarding client requests to external servers and returning the responses to the clients.
+
+
+### USE CASES - 
+
+- Anonymity → Hides the client's IP address from the destination server, providing privacy and anonymity.
+- Content Filtering → Blocks access to specific websites or content based on predefined rules or policies.
+- Bandwidth Optimization → Caches frequently accessed content to reduce bandwidth usage and improve response times.
+
+
+
 
