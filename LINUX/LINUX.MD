@@ -2164,17 +2164,20 @@ means:
 - It does not necessarily mean Nginx will automatically start after the machine reboots.
 
 For that:
-
+```bash
 sudo systemctl enable nginx
+```
 
 means:
 
-Configure Nginx to start automatically during boot.
+- Configure Nginx to start automatically during boot.
 
 You can also do both:
-
+```bash
 sudo systemctl enable --now nginx
-
+```
 Meaning:
 
-Enable it for boot and start it now.
+- Enable it for boot and start it now.
+
+
