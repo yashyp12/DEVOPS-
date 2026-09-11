@@ -2095,6 +2095,10 @@ On Ubuntu, many services are managed by systemd.
 
 > systemctl is the command-line tool used to interact with systemd.
 
+Check a service
 
+```bash
+sudo systemctl status nginx
+```
 
 
