@@ -2033,8 +2033,9 @@ echo "Script continues..."
 ```
 
 
+# What is Nginx?
 
-
+> Nginx (pronounced "engine-x") is a web server and reverse proxy commonly used on Linux servers.
 
 
 
