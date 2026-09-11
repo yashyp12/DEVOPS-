@@ -2149,30 +2149,19 @@ sudo systemctl stop nginx
 sudo systemctl restart nginx
 ```
 
-Starts the service now.
-Stop
-sudo systemctl stop nginx
-
-Stops it now.
-
-Restart
-sudo systemctl restart nginx
-
-Stops and starts it again.
-
-Useful after changing a service's configuration.
-
-3. enable vs start
+## 3. enable vs start
 
 This distinction is important.
 
-sudo systemctl start nginx
+```bash
+( sudo systemctl start nginx )
+```
 
 means:
 
-Start Nginx right now.
+- Start Nginx right now.
 
-It does not necessarily mean Nginx will automatically start after the machine reboots.
+- It does not necessarily mean Nginx will automatically start after the machine reboots.
 
 For that:
 
