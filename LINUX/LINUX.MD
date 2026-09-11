@@ -2046,8 +2046,14 @@ echo "Script continues..."
 
 > Nginx is a real Linux service that we can install, start, stop, restart, enable, and monitor.
 
+## Reverse Proxy - 
 
+> A reverse proxy is a server that sits between clients and backend servers, forwarding client requests to the appropriate backend server and returning the server's response to the client. 
 
+### Use Cases 
+- Load Balancing → Distributes incoming traffic across multiple backend servers to improve performance and reliability.
+
+- Security → Hides the identity and structure of backend servers, providing an additional layer of security
 
 
 
