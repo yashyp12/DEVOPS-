@@ -1,4 +1,6 @@
 #!/bin/bash
-ls/asdasdasdsa
+set -e
+
+ls/does-not-exist
 echo "Hello "
 echo $?

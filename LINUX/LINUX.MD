@@ -2012,7 +2012,13 @@ $?
 
 # set -e
 
-> 
+> Exit the script immediately if a command fails.
+
+```bash
+set -e
+```
+
+
 
 
 
