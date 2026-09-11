@@ -2018,6 +2018,16 @@ $?
 set -e
 ```
 
+```bash
+#!/bin/bash
+
+set -e
+
+ls /does-not-exist
+echo "Script continues..."
+```
+
+
 
 
 
