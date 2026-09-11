@@ -2101,4 +2101,47 @@ Check a service
 sudo systemctl status nginx
 ```
 
+Start
+sudo systemctl start nginx
 
+Starts the service now.
+
+Stop
+sudo systemctl stop nginx
+
+Stops it now.
+
+Restart
+sudo systemctl restart nginx
+
+Stops and starts it again.
+
+Useful after changing a service's configuration.
+
+3. enable vs start
+
+This distinction is important.
+
+sudo systemctl start nginx
+
+means:
+
+Start Nginx right now.
+
+It does not necessarily mean Nginx will automatically start after the machine reboots.
+
+For that:
+
+sudo systemctl enable nginx
+
+means:
+
+Configure Nginx to start automatically during boot.
+
+You can also do both:
+
+sudo systemctl enable --now nginx
+
+Meaning:
+
+Enable it for boot and start it now.
