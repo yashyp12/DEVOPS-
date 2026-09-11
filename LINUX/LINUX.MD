@@ -2018,6 +2018,11 @@ $?
 set -e
 ```
 
+`set -e` causes a Bash script to exit when a command returns a non-zero exit status.
+
+```bash
+set -e
+
 ```bash
 #!/bin/bash
 
