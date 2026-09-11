@@ -2038,11 +2038,13 @@ echo "Script continues..."
 > Nginx (pronounced "engine-x") is a web server and reverse proxy commonly used on Linux servers.
 
 # Common uses
-Web server → serves websites/static files.
-Reverse proxy → forwards requests to backend applications.
-Load balancer → distributes traffic across multiple servers.
-TLS/HTTPS termination → handles HTTPS connections.
-Static content → efficiently serves HTML, CSS, JavaScript, images, etc.
+- Web server → serves websites/static files.
+- Reverse proxy → forwards requests to backend applications.
+- Load balancer → distributes traffic across multiple servers.
+- TLS/HTTPS termination → handles HTTPS connections.
+- Static content → efficiently serves HTML, CSS, JavaScript, images, etc.
+
+> Nginx is a real Linux service that we can install, start, stop, restart, enable, and monitor.
 
 
 
