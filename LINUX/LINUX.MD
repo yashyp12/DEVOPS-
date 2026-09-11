@@ -2101,11 +2101,55 @@ Check a service
 sudo systemctl status nginx
 ```
 
-Start
+- Start
+```bash
 sudo systemctl start nginx
+```
+
+- Stop
+```bash
+sudo systemctl stop nginx
+```
+- Restart
+```bash
+sudo systemctl restart nginx
+```
+- Start
+```bash
+sudo systemctl start nginx
+```
+- Stop
+```bash
+sudo systemctl stop nginx
+```
+- Restart
+```bash
+sudo systemctl restart nginx
+```
+- Start
+```bash
+sudo systemctl start nginx
+```
+- Stop
+```bash
+sudo systemctl stop nginx
+```
+- Restart
+```bash
+sudo systemctl restart nginx
+```
+
+- Starts the service now.
+- Stop
+```bash
+sudo systemctl stop nginx
+```
+- Restart
+```bash
+sudo systemctl restart nginx
+```
 
 Starts the service now.
-
 Stop
 sudo systemctl stop nginx
 
