@@ -2083,7 +2083,13 @@ echo "Script continues..."
 > A service is a program/process that runs in the background and provides some functionality to the system or other applications.
 
 
+### Examples:
 
+nginx       → web server
+ssh         → remote SSH access
+cron        → scheduled tasks
+
+On Ubuntu, many services are managed by systemd.
 
 
 
