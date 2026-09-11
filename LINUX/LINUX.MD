@@ -2091,5 +2091,10 @@ cron        → scheduled tasks
 
 On Ubuntu, many services are managed by systemd.
 
+## 2. systemctl
+
+> systemctl is the command-line tool used to interact with systemd.
+
+
 
 
