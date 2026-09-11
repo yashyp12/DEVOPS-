@@ -2078,6 +2078,10 @@ echo "Script continues..."
 
 # Systemd / Services
 
+## 1. What is a service? 
+
+> A service is a program/process that runs in the background and provides some functionality to the system or other applications.
+
 
 
 
