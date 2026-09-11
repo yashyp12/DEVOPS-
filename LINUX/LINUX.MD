@@ -2181,3 +2181,137 @@ Meaning:
 - Enable it for boot and start it now.
 
 
+### `.service` unit file 
+
+A systemd service is defined by a **unit file**, commonly ending in:
+
+```text
+.service
+```
+
+For example:
+
+```text
+nginx.service
+```
+
+You don't need to write one from scratch for our roadmap. Just understand what it contains.
+
+A simplified example:
+
+```ini
+[Unit]
+Description=My Application
+
+[Service]
+ExecStart=/usr/bin/my-app
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+### Main sections
+
+**`[Unit]`**
+
+General information and dependencies.
+
+```ini
+Description=My Application
+```
+
+**`[Service]`**
+
+Defines how the application should run.
+
+```ini
+ExecStart=/usr/bin/my-app
+```
+
+`ExecStart` tells systemd **what command to execute**.
+
+```ini
+Restart=always
+```
+
+Tells systemd to restart the service if it exits.
+
+**`[Install]`**
+
+Defines how the service integrates with system startup.
+
+```ini
+WantedBy=multi-user.target
+```
+
+This is related to enabling the service during boot.
+
+---
+
+### How everything connects
+
+```text
+nginx.service
+     ↓
+systemd knows how to manage Nginx
+     ↓
+systemctl
+     ↓
+start / stop / restart / status / enable
+```
+
+So when you run:
+
+```bash
+sudo systemctl start nginx
+```
+
+you're effectively telling **systemd**:
+
+> Start the service described by `nginx.service`.
+
+---
+
+# Linux gap-fill: COMPLETE ✅
+
+Your agreed sequence is now finished:
+
+```text
+Linux fundamentals       ✅
+Networking                ✅
+SSH                       ✅
+SCP / SFTP                ✅
+Package management        ✅
+Bash scripting            ✅
+Systemd / services        ✅
+```
+
+### Next major phase
+
+```text
+                GIT & GITHUB
+                     ↓
+git init
+git status
+git add
+git commit
+git log
+git stash
+                     ↓
+branches
+merging
+                     ↓
+remote
+push / pull / clone
+                     ↓
+fork
+pull request
+                     ↓
+rebase
+squashing
+                     ↓
+merge conflicts
+```
+
+**Next session: Git & GitHub.**
