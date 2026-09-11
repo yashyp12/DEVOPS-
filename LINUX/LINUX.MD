@@ -2074,5 +2074,9 @@ echo "Script continues..."
 - Bandwidth Optimization → Caches frequently accessed content to reduce bandwidth usage and improve response times.
 
 
+> A forward proxy acts on behalf of clients when accessing external resources, while a reverse proxy acts on behalf of servers and sits in front of backend applications to handle traffic, routing, TLS termination, load balancing, and other edge functions.
+
+
+
 
 
