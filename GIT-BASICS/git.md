@@ -20,3 +20,5 @@ Shows the status of the working directory and staging area.
 
 ### git log - Shows the commit history for the current branch.
 
+## git reset - Resets the current branch to a specific state.
+
