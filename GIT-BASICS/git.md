@@ -9,12 +9,14 @@
 ### git status - 
 
 Shows the status of the working directory and staging area.
+### git status - 
 
+Shows the status of the working directory and staging area.
+
+### git add - Adds changes in the working directory to the staging area.
 ### git add - Adds changes in the working directory to the staging area.
 
 ### git restore - Restores files in the working directory from staging area or from a commit.
 
 ### git log - Shows the commit history for the current branch.
-
-
 
