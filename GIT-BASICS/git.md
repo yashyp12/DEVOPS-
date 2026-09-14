@@ -8,4 +8,6 @@
 
 ## git status - Shows the status of the working directory and staging area.
 
+## git add - Adds changes in the working directory to the staging area.
+
 
