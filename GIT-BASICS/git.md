@@ -4,3 +4,5 @@
 
 > git - Git is a distributed version control system (VCS) used to track changes in files, especially source code.
 
+> changes history are stored in .git file in the root directory of the repository.
+
