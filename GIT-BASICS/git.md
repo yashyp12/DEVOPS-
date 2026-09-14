@@ -6,4 +6,6 @@
 
 > changes history are stored in .git folder in the root directory of the repository.
 
+## git status - Shows the status of the working directory and staging area.
+
 
