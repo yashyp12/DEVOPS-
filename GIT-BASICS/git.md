@@ -125,7 +125,12 @@ git branch -vv
 (Shows the local branches along with their upstream tracking branches and the latest commit on each branch.)
 ```
 
+# PULL REQUEST : - 
+> A Pull Request is a request to merge your changes from one branch into another branch, usually through GitHub.
 
-
+```bash
+git push origin <branch_name>
+(Pushes the changes from the local branch to the remote repository named "origin".)
+```
 
 
