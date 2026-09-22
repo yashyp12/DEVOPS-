@@ -125,6 +125,9 @@ git branch -vv
 (Shows the local branches along with their upstream tracking branches and the latest commit on each branch.)
 ```
 
+# PULL REQUEST : - 
+> 
+
 
 
 
