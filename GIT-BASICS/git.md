@@ -14,8 +14,7 @@ Shows the status of the working directory and staging area.
 Shows the status of the working directory and staging area.
 
 ### git add - Adds changes in the working directory to the staging area.
-### git add - Adds changes in the working directory to the staging area.
-
+ 
 ### git restore - Restores files in the working directory from staging area or from a commit.
 
 ### git log - Shows the commit history for the current branch.
@@ -103,6 +102,30 @@ A ── B ── C
 HEAD~1 → B
 HEAD~2 → A
 ```
+
+```bash
+git merge <branch_name>
+(Merges the specified branch into the current branch, combining their changes.)
+```
+
+```bash
+git push origin main
+(Pushes the changes from the local "main" branch to the remote repository named "origin".)
+```
+
+## Upstream and Downstream
+
+> Upstream URL -> The upstream URL refers to the original repository from which a forked qrepository was created. 
+
+
+> Downstream URL -> The downstream URL refers to the forked repository that is derived from the upstream repository.
+
+```bash
+git branch -vv
+(Shows the local branches along with their upstream tracking branches and the latest commit on each branch.)
+```
+
+
 
 
 
