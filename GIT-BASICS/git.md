@@ -141,5 +141,40 @@ git push origin <branch_name>
 
 2 . git reset --hard <commit_hash> - This command will reset the branch to the specified commit, discarding all changes made after that commit.
 
-3 . git push origin <branch_name> --force - This command will force push the changes to the remote repository, overwriting the existing branch with the new changes.
+3 .git push origin <branch_name> --force - This command will force push the changes to the remote repository, overwriting the existing branch with the new changes.
+
+
+# Merging the PR
+
+> The pull request can be merge 
+
+```bash
+git fetch --all --prune
+```
+(Updates the local repository with the latest changes from all remote branches and removes any deleted branches.)
+
+```bash
+git reset --hard origin/<branch_name>
+```
+( Resets the current branch to match the specified remote branch, discarding any local changes.)
+
+```bash
+git pull 
+```
+ -  Fetch + integrate remote changes into current branch
+
+```bash
+git merge main
+```
+ -  Integrates main into your current branch
+
+```bash
+git rebase main
+```
+-  Replays your branch's commits on top of main
+
+```bash
+git reset --hard origin/main
+```
+ -  Makes current branch/files exactly match origin/main
 
