@@ -133,4 +133,13 @@ git push origin <branch_name>
 (Pushes the changes from the local branch to the remote repository named "origin".)
 ```
 
+> We can only create one pull request per branch. If we want to create another pull request, we need to create a new branch and push it to the remote repository.
+
+## If we wanted to remove some commit from the pr
+
+1 . We can use `git reset` to remove the commit from the branch and then force push the changes to the remote repository.
+
+2 . git reset --hard <commit_hash> - This command will reset the branch to the specified commit, discarding all changes made after that commit.
+
+3 . git push origin <branch_name> --force - This command will force push the changes to the remote repository, overwriting the existing branch with the new changes.
 
