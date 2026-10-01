@@ -1,4 +1,4 @@
-# Git GitHub Basics - 
+# Git GitHub Basics -
 
 > GitHub is a online platform that allows developers to host and review code, manage projects, and collaborate with other developers.  
 
@@ -6,32 +6,32 @@
 
 > changes history are stored in .git folder in the root directory of the repository.
 
-### git status - 
-
-Shows the status of the working directory and staging area.
-### git status - 
+### git status -
 
 Shows the status of the working directory and staging area.
 
-### git add - Adds changes in the working directory to the staging area.
- 
-### git restore - Restores files in the working directory from staging area or from a commit.
+### git status -
 
-### git log - Shows the commit history for the current branch.
+Shows the status of the working directory and staging area.
 
-### git reset - Resets the current branch to a specific state.
+### git add - Adds changes in the working directory to the staging area
 
+### git restore - Restores files in the working directory from staging area or from a commit
 
-### git stash - Temporarily saves changes in the working directory that are not ready to be committed.
+### git log - Shows the commit history for the current branch
 
+### git reset - Resets the current branch to a specific state
 
-### git stash pop - Applies the changes from the stash to the working directory and removes them from the stash list.
+### git stash - Temporarily saves changes in the working directory that are not ready to be committed
+
+### git stash pop - Applies the changes from the stash to the working directory and removes them from the stash list
 
 ```bash
 git stash pop
-``` 
+```
 
 ### git stash clear
+
 -> Removes all stashed changes from the stash list.
 
 ```bash
@@ -39,6 +39,7 @@ git stash clear
 ```
 
 ### git remote add origin -
+
 ( Adds a remote repository to the local repository with the name "origin".)
 
 ```bash
@@ -60,7 +61,6 @@ git push origin master
 
 > Branching allows developers to create separate lines of development within a repository. Each branch can have its own set of changes, enabling multiple developers to work on different features or bug fixes simultaneously without interfering with each other's work.
 
-
 ```bash
 git branch <branch_name>
 (Creates a new branch with the specified name.)
@@ -71,7 +71,8 @@ git checkout <branch_name>
 (Switches to the specified branch.)
 ```
 
-### HEAD - 
+### HEAD -
+
 (HEAD is a pointer to the current commit in the repository. It points to the latest commit on the current branch. When you switch branches or make new commits, HEAD moves to point to the new commit.)
 
 ```bash
@@ -92,7 +93,6 @@ git reset HEAD~1
 HEAD     → current commit
 HEAD~1   → one commit before HEAD
 HEAD~2   → two commits before HEAD
-
 
 ```
 A ── B ── C
@@ -115,8 +115,7 @@ git push origin main
 
 ## Upstream and Downstream
 
-> Upstream URL -> The upstream URL refers to the original repository from which a forked qrepository was created. 
-
+> Upstream URL -> The upstream URL refers to the original repository from which a forked qrepository was created.
 
 > Downstream URL -> The downstream URL refers to the forked repository that is derived from the upstream repository.
 
@@ -125,7 +124,8 @@ git branch -vv
 (Shows the local branches along with their upstream tracking branches and the latest commit on each branch.)
 ```
 
-# PULL REQUEST : - 
+# PULL REQUEST : -
+>
 > A Pull Request is a request to merge your changes from one branch into another branch, usually through GitHub.
 
 ```bash
@@ -143,38 +143,43 @@ git push origin <branch_name>
 
 3 .git push origin <branch_name> --force - This command will force push the changes to the remote repository, overwriting the existing branch with the new changes.
 
-
 # Merging the PR
 
-> The pull request can be merge 
+> The pull request can be merge
 
 ```bash
 git fetch --all --prune
 ```
+
 (Updates the local repository with the latest changes from all remote branches and removes any deleted branches.)
 
 ```bash
 git reset --hard origin/<branch_name>
 ```
+
 ( Resets the current branch to match the specified remote branch, discarding any local changes.)
 
 ```bash
 git pull 
 ```
- -  Fetch + integrate remote changes into current branch
+
+- Fetch + integrate remote changes into current branch
 
 ```bash
 git merge main
 ```
- -  Integrates main into your current branch
+
+- Integrates main into your current branch
 
 ```bash
 git rebase main
 ```
--  Replays your branch's commits on top of main
+
+- Replays your branch's commits on top of main
 
 ```bash
 git reset --hard origin/main
 ```
- -  Makes current branch/files exactly match origin/main
+
+- Makes current branch/files exactly match origin/main .
 
