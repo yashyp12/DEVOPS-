@@ -183,3 +183,9 @@ git reset --hard origin/main
 
 - Makes current branch/files exactly match origin/main .
 
+
+# git conflicts 
+
+> Squashing commits in Git means combining multiple commits into a single commit.
+
+
