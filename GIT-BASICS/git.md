@@ -184,8 +184,44 @@ git reset --hard origin/main
 - Makes current branch/files exactly match origin/main .
 
 
+## What is Git rebase?
+
+> Rebase moves or replays commits from your current branch onto another base commit. It can make the commit history appear linear.
+
+Before rebase
+
+![alt text](image.png)
+
+After rebasing feature onto main
+
+![alt text](image-1.png)
+
+
+### Basic rebase command
+
+```bash
+git switch feature
+git fetch origin
+git rebase origin/main
+```
+
+
 # git conflicts 
 
-> Squashing commits in Git means combining multiple commits into a single commit.
+> A Git conflict occurs when Git cannot automatically combine changes from different branches or commits.
+
+>>For example, suppose both main and feature modify the same line in a file.
 
 
+# squashing commits : - 
+
+> Squashing means combining multiple commits into one commit.
+
+### pick, squash and fixup
+
+- pick : Keep the commit as a separate commit.
+
+- squash : Combine the commit with the previous commit and allow editing the combined commit message.
+ 
+
+.
