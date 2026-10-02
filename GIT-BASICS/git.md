@@ -210,7 +210,7 @@ git rebase origin/main
 
 > A Git conflict occurs when Git cannot automatically combine changes from different branches or commits.
 
->>For example, suppose both main and feature modify the same line in a file.
+> For example, suppose both main and feature modify the same line in a file.
 
 
 # squashing commits : - 
@@ -224,4 +224,6 @@ git rebase origin/main
 - squash : Combine the commit with the previous commit and allow editing the combined commit message.
  
 
-.
+- fixup : Combine the commit with the previous commit, discarding its commit message.
+
+
