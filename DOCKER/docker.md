@@ -173,4 +173,12 @@ Example: When you execute docker run nginx, the Docker CLI sends a request to th
 
 - Eg - Kubernetes, Docker Swarm, Apache Mesos, Nomad
 
-    
+## Dockerfile: 
+> A set of instructions that tells Docker how to package an application.
+
+## Docker Image: 
+> A read-only template containing the application code, dependencies, runtime and filesystem needed to create a container.
+
+## Docker Container: 
+> A running instance created from the image.
+
