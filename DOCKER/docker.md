@@ -128,3 +128,43 @@ All these containers can run on the same host while remaining isolated from one 
 
 > Exception: Docker Desktop on Windows can run Linux containers using WSL2 or a lightweight VM.
 
+
+## Runtime in docker - 
+
+> The software engine that executes and manages containers, or the period when your application is actively running
+
+
+### Docker Runtime
+
+> containerd and runc are components that work together to run Docker containers.
+
+**containerd** is a container runtime that manages the full lifecycle of containers, including pulling images, storing them, creating containers, running them, and supervising their execution.
+
+**runc**: A low-level runtime that actually creates and starts the container process using Linux features such as namespaces and cgroups.
+
+> containerd = Manages containers.
+
+> runc = Runs the container process.
+
+
+## Docker Engine - 
+
+> Docker Engine is the core software that builds, runs and manages Docker containers on a machine.
+
+
+### Components of Docker Engine
+
+1. **Docker Daemon (dockerd)**: The background service that manages Docker containers, images, networks and storage volumes.
+
+> Docker Daemon (dockerd) is a persistent background service that listens for Docker API requests and manages Docker objects, including images, containers, networks, and volumes.
+
+Example: When you execute docker run nginx, the Docker CLI sends a request to the Docker Daemon, which processes the request and coordinates with containerd and runc to start the container.
+
+
+2. **Docker CLI (docker)**: The command-line interface that allows users to interact with the Docker Daemon.
+
+3. **Docker API**: The RESTful API that allows programs to interact with the Docker Daemon.
+
+![alt text](../28877b20-6535-460e-9942-b66de7003ecc.png)
+
+
