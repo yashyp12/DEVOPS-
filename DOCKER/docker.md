@@ -118,3 +118,13 @@ All these containers can run on the same host while remaining isolated from one 
  
 
 ![alt text](image-2.png)
+
+> - Windows containers require a Windows kernel to run.
+
+- Linux containers require a Linux kernel to run.
+- You cannot directly run a Windows container on a Linux 
+
+> Docker host or vice versa because they use different OS kernels.
+
+> Exception: Docker Desktop on Windows can run Linux containers using WSL2 or a lightweight VM.
+
