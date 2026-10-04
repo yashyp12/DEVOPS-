@@ -168,3 +168,9 @@ Example: When you execute docker run nginx, the Docker CLI sends a request to th
 ![alt text](../28877b20-6535-460e-9942-b66de7003ecc.png)
 
 
+## Orchestrtion in Docker : - 
+> Orchestration is the process of automating the deployment, scaling, and management of containerized applications across multiple hosts.
+
+- Eg - Kubernetes, Docker Swarm, Apache Mesos, Nomad
+
+    
