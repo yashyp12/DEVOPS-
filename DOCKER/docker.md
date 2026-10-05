@@ -198,6 +198,14 @@ Example: When you execute docker run nginx, the Docker CLI sends a request to th
 
 ```bash
 docker run hello-world
+
+docker images
+
+docker ps
+
+docker pull ubuntu:latest
+
 ```
+
 
 
