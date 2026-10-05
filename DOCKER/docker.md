@@ -182,3 +182,22 @@ Example: When you execute docker run nginx, the Docker CLI sends a request to th
 ## Docker Container: 
 > A running instance created from the image.
 
+![alt text](image-3.png)
+
+
+> OCI defines open standards for container images, runtimes, and distribution so different container tools can work together.
+
+
+## Docker Registry - 
+> A repository for storing and distributing Docker images.
+
+## Docker Hub - 
+> Docker Hub is a publicly hosted Docker Registry provided by Docker.
+
+- It allows developers to store, share and download Docker images.
+
+```bash
+docker run hello-world
+```
+
+
