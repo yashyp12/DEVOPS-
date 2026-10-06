@@ -201,9 +201,21 @@ docker run hello-world
 
 docker images
 
-docker ps
+docker ps 
+(check for running containers)
 
 docker pull ubuntu:latest
+
+docker container ls 
+
+(lists all running containers)
+
+docker run -it ubuntu:latest /bin/bash
+
+( -it - interactive mode, allows you to run commands inside the container)
+
+docker container exec -it <container_id> bash
+(exec - execute a command in a running container)
 
 ```
 
