@@ -245,9 +245,14 @@ docker run -d alpine ping google.com
 docker run -d -p 8080:80 nginx
 (-p - port mapping, maps port 8080 on the host to port 80 in the container)
 
-
-
-
 ```
 
+## Docker `-p` Arguments
 
+The `-p` option takes two main values:
+
+1. **Host Port**: The port on the host machine that you want to map to the container's port.
+
+2. **Container Port**: The port inside the container that you want to expose to the host.
+
+    
