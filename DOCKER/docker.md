@@ -227,6 +227,27 @@ docker stop <container_id>
 docker start <container_id>
 
 docker inspect <container_id>
+
+docker logs <container_id>
+
+docker container prune -f
+(removes all stopped containers)
+
+
+docker run alpine ping google.com
+(Alpine is a lightweight Linux distribution, ping command is used to check connectivity)
+
+
+docker run -d alpine ping google.com
+(-d - detached mode, runs the container in the background)
+
+
+docker run -d -p 8080:80 nginx
+(-p - port mapping, maps port 8080 on the host to port 80 in the container)
+
+
+
+
 ```
 
 
