@@ -217,7 +217,16 @@ docker run -it ubuntu:latest /bin/bash
 docker container exec -it <container_id> bash
 (exec - execute a command in a running container)
 
-```
 
+docker rm <container_id>
+
+docker rmi <image_id>
+
+docker stop <container_id>
+
+docker start <container_id>
+
+docker inspect <container_id>
+```
 
 
