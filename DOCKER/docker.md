@@ -276,3 +276,16 @@ docker commit -m "message" <container_id> <new_image_name>:<tag>
 docker commit -m "added names.txt file " ab27c33c178c names_ubuntu:1.01
 ```
 
+## To remove docker images at once 
+
+```bash
+docker images -q (lists all image IDs)
+
+docker rmi $(docker images -q)
+
+docker stop $(docker ps -q) 
+(stops all running containers)
+```
+
+
+
