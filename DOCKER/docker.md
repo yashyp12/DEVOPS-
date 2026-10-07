@@ -255,4 +255,16 @@ The `-p` option takes two main values:
 
 2. **Container Port**: The port inside the container that you want to expose to the host.
 
-    
+
+```bash
+docker start -ai ab27c33c178c
+
+(-a - attach terminal to the container's output, -i - interactive, keeps STDIN open)
+
+docker run    → Create a NEW container from an image
+docker start  → Start an EXISTING container
+
+```
+
+
+
