@@ -266,5 +266,13 @@ docker start  → Start an EXISTING container
 
 ```
 
+ 
+## Docker Commit   : 
+> docker commit creates a new Docker image from the current state of an existing container.
 
+```bash
+docker commit -m "message" <container_id> <new_image_name>:<tag>
+
+docker commit -m "added names.txt file " ab27c33c178c names_ubuntu:1.01
+```
 
