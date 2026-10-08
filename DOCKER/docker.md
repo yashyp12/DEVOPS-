@@ -342,29 +342,6 @@ COPY app /app
 
 - The underlying image layers remain perfectly safe and untouched. When the container is deleted, the writable layer disappears, but the image layers remain intact.
 
-AI Mode conversation: what is docker layers part
-
-You said: what is docker layers part
-
-what is docker layers part
-In Docker, layers are the individual, immutable filesystem changes that stack on top of each other to form a complete Docker image.
-Instead of treating an image as a single massive file, Docker breaks it down into a sequence of smaller parts (directories containing file additions, deletions, or modifications). When you run a container, a special filesystem merges these distinct parts into a single, cohesive view.
-
-🧱 How Docker Layers Break Down
-
-A Docker architecture splits its layers into two main parts:
-
-1. Read-Only Layers (The Image)
-
-Every instruction in your Dockerfile (such as FROM, RUN, COPY, or ADD) that modifies the filesystem creates a permanent, read-only layer.
-• Base Layer: The very first part of the stack, usually defined by the FROM command (e.g., a minimal Linux operating system like Ubuntu or Alpine).
-• Intermediate Layers: The parts stacked on top containing your installed packages, application code, and dependencies. Once built, these layers cannot be altered.
-
-1. Writable Layer (The Container Runtime)
-
-When you launch a container using docker run, Docker takes the read-only image layers and adds a thin, writable layer right on top (often called the Container Layer).
-• Any data your active application creates, modifies, or deletes while running happens exclusively in this thin top layer.
-• The underlying image layers remain perfectly safe and untouched. When the container is deleted, the writable layer disappears, but the image layers remain intact.
 
 ⚙️ How the Parts Work Together
 
