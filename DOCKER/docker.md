@@ -265,7 +265,6 @@ docker run    → Create a NEW container from an image
 docker start  → Start an EXISTING container
 
 ```
-
  
 ## Docker Commit   : 
 > docker commit creates a new Docker image from the current state of an existing container.
@@ -274,7 +273,14 @@ docker start  → Start an EXISTING container
 docker commit -m "message" <container_id> <new_image_name>:<tag>
 
 docker commit -m "added names.txt file " ab27c33c178c names_ubuntu:1.01
+
+docker tag my-ubuntu:v1 <your-dockerhub-username>/my-ubuntu:v1
+
+docker push <your-dockerhub-username>/my-ubuntu:v1
+
+docker pull yashyp12/names_ubuntu:1.01
 ```
+
 
 ## To remove docker images at once 
 
@@ -289,3 +295,85 @@ docker stop $(docker ps -q)
 
 
 
+# Docker Layers
+
+A **Docker image is built in layers**.
+
+> layers are the individual, immutable filesystem changes that stack on top of each other to form a complete Docker image
+
+Each instruction in a Dockerfile can create a new **read-only layer** in the image.
+
+### Example
+
+```dockerfile
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install -y nginx
+COPY app /app
+
+┌──────────────────────┐
+│      app /app        │  ← Layer 4
+├──────────────────────┤
+│     Nginx installed  │  ← Layer 3
+├──────────────────────┤
+│     apt-get update   │  ← Layer 2
+├──────────────────────┤
+│       Ubuntu         │  ← Layer 1
+└──────────────────────┘
+
+
+- A Docker architecture splits its layers into two main parts:
+```
+
+### 1. Read-Only Layers (The Image)
+
+- Every instruction in your Dockerfile (such as FROM, RUN, COPY, or ADD) that modifies the filesystem creates a permanent, read-only layer.
+
+- Base Layer: The very first part of the stack, usually defined by the FROM command (e.g., a minimal Linux operating system like Ubuntu or Alpine).
+
+- Intermediate Layers: The parts stacked on top containing your installed packages, application code, and dependencies. Once built, these layers cannot be altered.
+
+
+### 2. Writable Layer (The Container Runtime)
+
+> When you launch a container using docker run, Docker takes the read-only image layers and adds a thin, writable layer right on top (often called the Container Layer).
+
+-  Any data your active application creates, modifies, or deletes while running happens exclusively in this thin top layer.
+
+- The underlying image layers remain perfectly safe and untouched. When the container is deleted, the writable layer disappears, but the image layers remain intact.
+
+AI Mode conversation: what is docker layers part
+
+You said: what is docker layers part
+
+what is docker layers part
+In Docker, layers are the individual, immutable filesystem changes that stack on top of each other to form a complete Docker image.
+Instead of treating an image as a single massive file, Docker breaks it down into a sequence of smaller parts (directories containing file additions, deletions, or modifications). When you run a container, a special filesystem merges these distinct parts into a single, cohesive view.
+
+🧱 How Docker Layers Break Down
+
+A Docker architecture splits its layers into two main parts:
+
+1. Read-Only Layers (The Image)
+
+Every instruction in your Dockerfile (such as FROM, RUN, COPY, or ADD) that modifies the filesystem creates a permanent, read-only layer.
+• Base Layer: The very first part of the stack, usually defined by the FROM command (e.g., a minimal Linux operating system like Ubuntu or Alpine).
+• Intermediate Layers: The parts stacked on top containing your installed packages, application code, and dependencies. Once built, these layers cannot be altered.
+
+1. Writable Layer (The Container Runtime)
+
+When you launch a container using docker run, Docker takes the read-only image layers and adds a thin, writable layer right on top (often called the Container Layer).
+• Any data your active application creates, modifies, or deletes while running happens exclusively in this thin top layer.
+• The underlying image layers remain perfectly safe and untouched. When the container is deleted, the writable layer disappears, but the image layers remain intact.
+
+⚙️ How the Parts Work Together
+
+┌─────────────────────────────────┐
+│  Writable Layer (Runtime Apps)  │ <-- Changes here disappear when container stops
+├─────────────────────────────────┤
+│  Layer 3: App Code (COPY . .)   │ \
+├─────────────────────────────────┤  |
+│  Layer 2: Packages (RUN apt...) │  ├── Read-Only Image Layers (Immutable)
+├─────────────────────────────────┤  |
+│  Layer 1: Base OS (FROM ubuntu) │ /
+└─────────────────────────────────┘
