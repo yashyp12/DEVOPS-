@@ -1,0 +1,4 @@
+FROM ubuntu
+MAINTAINER yash patil <patilyashyp12@gmail.com>
+RUN apt-get update
+CMD ["echo", "Hello my name is Yash" ]

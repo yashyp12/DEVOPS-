@@ -354,3 +354,36 @@ COPY app /app
 ├─────────────────────────────────┤  |
 │  Layer 1: Base OS (FROM ubuntu) │ /
 └─────────────────────────────────┘
+
+![alt text](<Docker Layers_ Build, Cache, Share.png>)
+
+
+
+# How to Create Docker Image
+
+## 1 Dockerfile - 
+> A Dockerfile is a text file that contains a series of instructions on how to build a Docker image. Each instruction in the Dockerfile creates a new layer in the image.
+
+```bash
+FROM ubuntu
+RUN apt-get update
+CMD "echo", "Hello World"
+```
+
+# Dockerfile Instructions
+
+- **`FROM`** — Selects the base image.
+- **`LABEL`** — Adds metadata to the image.
+- **`RUN`** — Executes a command during image building.
+- **`CMD`** — Defines the default command to execute when a container starts.
+
+## Docker Build Command
+
+```bash
+docker build -t myimage .
+```
+
+
+
+
+
