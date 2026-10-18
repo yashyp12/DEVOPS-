@@ -384,6 +384,78 @@ docker build -t myimage .
 ```
 
 
+# Port Mapping and Runtime Environment Variables
+
+## 1. Port Mapping
+Port mapping connects a port on the host machine to a port inside a Docker container.
+
+### Why is it used?
+
+- To access containerized applications from a browser or host machine.
+- To expose web servers and APIs through host ports.
+- To control which host port forwards traffic to the container.
+
+### Syntax
+
+```bash
+docker run -p HOST_PORT:CONTAINER_PORT IMAGE
+```
+
+### Example
+
+```bash
+docker run -d --name nginx-demo -p 8080:80 nginx
+```
+
+- `-d`: runs the container in the background.
+- `--name`: assigns a container name.
+- `-p 8080:80`: maps host port 8080 to container port 80.
+- `nginx`: the image being used.
+
+Open `http://localhost:8080` in a browser.
+
+### Important points
+
+- The application must listen on the container port being mapped.
+- Port mapping does not automatically expose the application publicly to the internet.
+- If a host port is already occupied, choose another available port.
+
+## 2. Runtime Environment Variables
+
+Environment variables are key-value settings passed to a container when it starts.
+
+### Why are they used?
+
+- To configure applications without hardcoding settings.
+- To use different configurations for development and production.
+- To supply runtime values to applications.
+
+### Example
+
+```bash
+docker run --rm -e APP_ENV=development alpine sh -c 'echo $APP_ENV'
+```
+
+### Inspect environment variables
+
+```bash
+docker exec nginx-demo printenv
+```
+
+This lists environment variables inside the running container.
+
+### Important points
+
+- `-e KEY=VALUE` sets an environment variable at runtime.
+
+## Summary
+- Port mapping makes a container's listening port accessible through a host port.
+- Runtime environment variables provide configuration when a container starts.
+- `-p` is used for port mapping.
+- `-e` is used to pass an environment variable.
+
+
+
 
 
 
