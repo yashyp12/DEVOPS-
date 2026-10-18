@@ -370,20 +370,6 @@ RUN apt-get update
 CMD "echo", "Hello World"
 ```
 
-# Dockerfile Instructions
-
-- **`FROM`** — Selects the base image.
-- **`LABEL`** — Adds metadata to the image.
-- **`RUN`** — Executes a command during image building.
-- **`CMD`** — Defines the default command to execute when a container starts.
-
-## Docker Build Command
-
-```bash
-docker build -t myimage .
-```
-
-
 # Port Mapping and Runtime Environment Variables
 
 ## 1. Port Mapping
@@ -455,6 +441,75 @@ This lists environment variables inside the running container.
 - `-e` is used to pass an environment variable.
 
 
+# Dockerfile Instructions
+
+- **`FROM`** — Selects the base image.
+- **`LABEL`** — Adds metadata to the image.
+- **`RUN`** — Executes a command during image building.
+- **`CMD`** — Defines the default command to execute when a container starts.
+
+## Docker Build Command
+
+```bash
+docker build -t myimage .
+```
+
+# Topic 5: Dockerfile Instructions
+
+## What is a Dockerfile?
+
+A Dockerfile is a text file containing instructions Docker uses to build an image. Instructions are processed from top to bottom.
+
+## Standard Structure
+
+```dockerfile
+FROM python:3.12-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+ENV APP_ENV=production
+EXPOSE 8080
+CMD ["python", "app.py"]
+```
+
+This is a generic example. The correct base image and startup configuration depend on the application.
+
+## Important Instructions
+
+| Instruction | Purpose |
+| --- | --- |
+| `FROM` | Selects the base image |
+| `WORKDIR` | Sets the working directory |
+| `COPY` | Copies files into the image |
+| `RUN` | Executes commands during image building |
+| `CMD` | Defines the default startup command or arguments |
+| `ENTRYPOINT` | Defines the main executable |
+| `ENV` | Sets environment variables that persist into runtime |
+| `ARG` | Defines build-time variables |
+| `EXPOSE` | Documents the intended listening port |
+
+## Key Differences
+
+- `RUN` executes during the image build; `CMD` defines the default startup command.
+- `CMD` is the default command or arguments; `ENTRYPOINT` defines the main executable.
+- `ARG` is for build-time configuration; `ENV` persists into runtime.
+- `EXPOSE` documents a container port; `-p` publishes a host-to-container port mapping.
+- `WORKDIR` sets the directory in which subsequent relative paths and commands operate.
+- `COPY` is preferred for ordinary file copying.
+
+## Practical Commands
+
+```bash
+docker build -t dockerfile-demo .
+docker run --rm dockerfile-demo
+docker image inspect dockerfile-demo
+```
+
+## Security
+Never hardcode AWS credentials, API keys, passwords or other secrets into a Dockerfile or image. Use a suitable secrets-management mechanism.
+
+ 
 
 
 
