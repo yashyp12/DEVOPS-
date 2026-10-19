@@ -1,11 +1,15 @@
-FROM python:3.12-slim
+# CREATING A DOCKER FILE - HELLO BANENR CONTAINER 
 
-WORKDIR /app
+# 1 . setting up BASE image 
 
-COPY app.py .
+FROM ubuntu:latest
 
-ENV APP_ENV=development
+# 2  Step 2 : Update packages 
 
-CMD ["python", "app.py"]
+RUN apt-get update && apt-get install -y figlet
+
+# 3 Startup Commands
+
+CMD ["figlet","Hello Docker"]
 
 
