@@ -510,6 +510,15 @@ docker image inspect dockerfile-demo
 Never hardcode AWS credentials, API keys, passwords or other secrets into a Dockerfile or image. Use a suitable secrets-management mechanism.
 
  
+# Docker Layers, Build Cache and .dockerignore
+
+## Docker Layers - 
+
+> Docker builds an image from a sequence of filesystem changes called layers. Docker can reuse cached results from previous builds when the relevant instructions and inputs haven't changed.
+
+## Docker ignore - 
+> A .dockerignore file excludes unnecessary files from the build context sent to Docker.
+
 
 
 
