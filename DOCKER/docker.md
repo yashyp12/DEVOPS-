@@ -520,6 +520,10 @@ Never hardcode AWS credentials, API keys, passwords or other secrets into a Dock
 > A .dockerignore file excludes unnecessary files from the build context sent to Docker.
 
 
+# Multi Stage Builds - 
 
+> A Docker multi-stage build is a method of organizing a single Dockerfile into multiple distinct parts (or stages) to create smaller, more secure, and production-ready images.
+
+> A multi-stage build uses multiple FROM instructions in one Dockerfile. You build or prepare something in one stage, then copy only the required output into the final stage.
 
 
