@@ -527,3 +527,32 @@ Never hardcode AWS credentials, API keys, passwords or other secrets into a Dock
 > A multi-stage build uses multiple FROM instructions in one Dockerfile. You build or prepare something in one stage, then copy only the required output into the final stage.
 
 
+# Example
+Suppose we have a Python application.
+
+# Stage 1: Build dependencies
+```
+FROM python:3.12 AS builder
+
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
+
+# Stage 2: Final image
+
+FROM python:3.12-slim
+
+WORKDIR /app
+COPY --from=builder /install /usr/local
+COPY app.py .
+
+CMD ["python", "app.py"]
+
+```
+
+## How it works:
+
+1. The builder stage installs dependencies.
+2. The final stage starts from a smaller base image.
+3. COPY --from=builder transfers the installed dependencies from the first stage.
+4. The final image doesn't include the builder stage's entire filesystem.
