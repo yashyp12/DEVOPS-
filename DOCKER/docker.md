@@ -565,3 +565,20 @@ CMD ["python", "app.py"]
 ### Docker Swarm : Tools which allows you to manage a cluster of Docker Engines as a single virtual system.
 
 > Docker Swarm is a tool that links multiple computers running Docker together and turns them into a single, unified virtual machine.
+
+
+## Types of Docker Networks
+
+- Host 
+- Bridge (default)
+- User defined bridge
+- None 
+- MACVLAN (docker swarm)
+- IPVLAM
+- Overlay
+
+```bash
+docker network ls
+``` 
+
+
