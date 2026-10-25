@@ -419,6 +419,11 @@ Environment variables are key-value settings passed to a container when it start
 ### Example
 
 ```bash
+docker run -e APP_ENV=production alpine sh -c 'echo $APP_ENV'
+```
+
+
+```bash
 docker run --rm -e APP_ENV=development alpine sh -c 'echo $APP_ENV'
 ```
 
