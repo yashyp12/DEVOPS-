@@ -579,6 +579,7 @@ CMD ["python", "app.py"]
 
 ```bash
 docker network ls
-``` 
 
+docker network create <network_name> -d driver_name
+``` 
 
