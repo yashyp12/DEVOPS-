@@ -537,9 +537,9 @@ FROM python:3.12 AS builder
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
-
+```
 # Stage 2: Final image
-
+```
 FROM python:3.12-slim
 
 WORKDIR /app
@@ -549,10 +549,19 @@ COPY app.py .
 CMD ["python", "app.py"]
 
 ```
-
 ## How it works:
 
 1. The builder stage installs dependencies.
 2. The final stage starts from a smaller base image.
 3. COPY --from=builder transfers the installed dependencies from the first stage.
 4. The final image doesn't include the builder stage's entire filesystem.
+
+
+# Docker Networking 
+
+> 
+
+
+### Docker Swarm : Tools which allows you to manage a cluster of Docker Engines as a single virtual system.
+
+> Docker Swarm is a tool that links multiple computers running Docker together and turns them into a single, unified virtual machine.

@@ -1,30 +1,17 @@
-# # CREATING A DOCKER FILE - HELLO BANENR CONTAINER 
+#multi stage build docker file
 
-# # 1 . setting up BASE image 
-
-# FROM ubuntu:latest
-
-# # 2  Step 2 : Update packages 
-
-# RUN apt-get update && apt-get install -y figlet
-
-# # 3 Startup Commands
-
-# CMD ["figlet","Hello Docker"]
-
-
-
-FROM python:3.12-slim
+FROM python:3.12 AS builder
 
 WORKDIR /app
 
-COPY app.py .
+COPY requirements.txt
+RUN pip install requirements.txt
 
-ENV APP_ENV=development
+# final stage 
+FROM python:3.12-slim
+WORKDIR /app
+COPY --from=builder /install/usr/local
+COPY app.py . 
 
-CMD ["python", "app.py"]
-
-
-
-
+CMD ["python","app.py"]
 
