@@ -1,17 +1,28 @@
-#multi stage build docker file
+# multi stage building of docker file 
 
 FROM python:3.12 AS builder
 
+# SET WORKDIR
+
 WORKDIR /app
 
-COPY requirements.txt
-RUN pip install requirements.txt
+# copy requirements 
 
-# final stage 
-FROM python:3.12-slim
+COPY requirements.txt .
+
+# INSTALL PACKAGES 
+
+RUN pip install -r requirements.txt
+
+# STAGE 2
+
+FROM python:3.12-slim 
+
 WORKDIR /app
-COPY --from=builder /install/usr/local
-COPY app.py . 
+
+COPY --from=builder /install /usr/local
+
+COPY app.py .
 
 CMD ["python","app.py"]
 

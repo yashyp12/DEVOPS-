@@ -564,7 +564,7 @@ CMD ["python", "app.py"]
 
 # Docker Networking 
 
-> 
+> Docker networking allows containers to communicate with other containers, your host machine, and external networks.
 
 
 ### Docker Swarm : Tools which allows you to manage a cluster of Docker Engines as a single virtual system.
