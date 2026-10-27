@@ -575,7 +575,7 @@ CMD ["python", "app.py"]
 ## Types of Docker Networks Drivers 
 (Drivers)
 - Host 
-- Bridge (default)
+- Bridge (default)  
 - User defined bridge
 - None 
 - MACVLAN (docker swarm)
@@ -588,3 +588,12 @@ docker network ls
 docker network create <network_name> -d driver_name
 ``` 
 
+## Docker Network Drivers
+
+A Docker network driver determines how containers communicate with one another, the host, and external networks.
+
+### 1. Bridge Network (Default)
+> A bridge network creates a virtual network on a single Docker host, allowing containers to communicate with each other using private container IP addresses. On a user-defined bridge network, containers can also discover each other using container names.
+
+
+    

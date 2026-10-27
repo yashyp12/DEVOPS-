@@ -1,28 +1,31 @@
-# multi stage building of docker file 
+# STAGE 1 :  The build environment 
 
-FROM python:3.12 AS builder
+FROM node:20-alpine AS builder 
 
-# SET WORKDIR
-
-WORKDIR /app
-
-# copy requirements 
-
-COPY requirements.txt .
-
-# INSTALL PACKAGES 
-
-RUN pip install -r requirements.txt
-
-# STAGE 2
-
-FROM python:3.12-slim 
+# Set the working dir inside the build container 
 
 WORKDIR /app
 
-COPY --from=builder /install /usr/local
+# Copy dependencies manifrest first 
 
-COPY app.py .
+COPY package*.json ./
 
-CMD ["python","app.py"]
+RUN npm ci
+
+COPY ..
+
+RUN npm run build 
+
+
+FROM nginx:1.25-alpine
+
+WORKDIR /user/share/nginx/html
+
+RUN rm -rf ./*
+
+COPY --from=builder /app/dist .
+
+EXPOSE 80
+
+CMD ["nginx","-g","daemon off;"]
 
