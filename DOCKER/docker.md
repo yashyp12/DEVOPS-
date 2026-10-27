@@ -595,5 +595,8 @@ A Docker network driver determines how containers communicate with one another, 
 ### 1. Bridge Network (Default)
 > A bridge network creates a virtual network on a single Docker host, allowing containers to communicate with each other using private container IP addresses. On a user-defined bridge network, containers can also discover each other using container names.
 
+> Why is it used? To connect multiple containers that work together on the same machine without requiring each service to expose its port publicly.
+
+
 
     
