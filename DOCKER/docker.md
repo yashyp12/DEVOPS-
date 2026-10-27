@@ -619,3 +619,4 @@ docker run -d --name frontend --network ecommerce-net nginx
 
 ## 2. Host Network : 
 > Host networking allows a container to share the host's network namespace instead of using its own isolated network namespace. The container uses the host's network interfaces and port space.
+
