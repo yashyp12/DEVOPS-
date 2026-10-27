@@ -597,6 +597,25 @@ A Docker network driver determines how containers communicate with one another, 
 
 > Why is it used? To connect multiple containers that work together on the same machine without requiring each service to expose its port publicly.
 
+Real-world example — E-commerce application
 
+An application has three containers:
 
-    
+- frontend — displays the website.
+- backend — handles business logic.
+- mysql — stores customer and order data.
+
+```bash
+docker network create ecommerce-net
+
+docker network inspect <network_name>
+
+## sConnect containers to it:
+docker network connect ecommerce-net backend
+docker network connect ecommerce-net mysql
+
+docker run -d --name frontend --network ecommerce-net nginx
+```
+
+## 2. Host Network : 
+> Host networking allows a container to share the host's network namespace instead of using its own isolated network namespace. The container uses the host's network interfaces and port space.
