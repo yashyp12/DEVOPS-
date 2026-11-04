@@ -589,7 +589,6 @@ docker network create <network_name> -d driver_name
 ``` 
 
 ## Docker Network Drivers
-
 A Docker network driver determines how containers communicate with one another, the host, and external networks.
 
 ### 1. Bridge Network (Default)
@@ -620,3 +619,87 @@ docker run -d --name frontend --network ecommerce-net nginx
 ## 2. Host Network : 
 > Host networking allows a container to share the host's network namespace instead of using its own isolated network namespace. The container uses the host's network interfaces and port space.
 
+
+### Real-world example — Network monitoring
+
+Suppose an infrastructure monitoring agent needs to observe network activity and listen on a host port. Host networking may simplify access to the host's network environment.
+
+```bash
+docker run --rm --network host nginx
+```
+
+## 3. None : 
+> The none driver disables normal container networking. The container retains loopback networking, but Docker doesn't provide its usual external network connectivity.
+
+## Real-world example — Offline data processing
+
+- A company runs a container that processes a local dataset. The job doesn't need to download files, call APIs, or connect to a database. Disabling normal networking reduces its network attack surface.
+
+
+```bash
+docker run --rm --network none alpine
+```
+
+
+# Docker Volumes and Storage 
+
+### Why Docker Storage Is Needed
+
+> Containers have a writable layer, but its data is removed when the container is deleted.
+> Docker storage mechanisms allow important data to persist independently of a container's lifecycle.
+
+## Types of Docker Storage
+
+### A. Container Writable Layer
+
+- Stores changes made inside a container.
+- Exists only during the container's lifecycle.
+- Removed when the container is deleted.
+- Suitable for temporary data.
+
+### B. Docker Volumes
+
+- Storage managed by Docker.
+- Exists independently of containers.
+- Data remains available after container deletion.
+- Suitable for databases and persistent application data.
+
+```bash
+Create a volume:
+docker volume create mysql-data
+
+Use a volume:
+docker run -d \
+  --name mysql-db \
+  -v mysql-data:/var/lib/mysql \
+  -e MYSQL_ROOT_PASSWORD=secret \
+  mysql:8
+```
+
+
+### C. Bind Mounts
+
+- Maps an existing host file or directory into a container.
+- Changes can be reflected on both the host and container.
+- Useful during application development.
+- Depends on a specific host path.
+
+```bash
+Example:
+docker run -d \
+  --name nginx-dev \
+  -p 8080:80 \
+  --mount type=bind,source="$(pwd)",target=/usr/share/nginx/html \
+  nginx
+```
+
+### Important Commands
+```bash
+docker volume create app-data
+docker volume ls
+docker volume inspect app-data
+docker volume rm app-data
+docker volume prune
+```
+
+   
