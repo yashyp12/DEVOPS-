@@ -702,4 +702,16 @@ docker volume rm app-data
 docker volume prune
 ```
 
-   
+### 1. Where does Docker store volumes?
+
+> Docker volumes are stored on the host machine and managed by Docker.
+
+On native Linux Docker Engine, the default location is:
+
+```bash
+/var/lib/docker/volumes/
+```
+
+On Windows with Docker Desktop, volume data is generally stored inside Docker Desktop's Linux environment (WSL2-backed storage).
+
+
