@@ -716,3 +716,72 @@ On Windows with Docker Desktop, volume data is generally stored inside Docker De
 
 # Docker Compose 
 > Docker Compose is a tool used to define, configure and run multiple Docker containers together using a YAML configuration file, usually named compose.yaml.
+
+>YAML file defines services, networks and volumes for a multi-container application.
+
+# Docker Compose - Basic YAML Structure
+
+```yaml
+services:
+  service-name:
+    image: image-name
+    container_name: my-container
+    ports:
+      - "HOST_PORT:CONTAINER_PORT"
+    environment:
+      VARIABLE_NAME: value
+    volumes:
+      - volume-name:/container/path
+    networks:
+      - app-network
+    depends_on:
+      - another-service
+
+volumes:
+  volume-name:
+
+networks:
+  app-network:
+    driver: bridge
+```
+
+## Important Keys
+
+| Key | Purpose |
+| --- | --- |
+| `services` | Defines application services |
+| `image` | Docker image to use |
+| `container_name` | Custom container name |
+| `build` | Build image from a Dockerfile |
+| `ports` | Maps host and container ports |
+| `environment` | Sets environment variables |
+| `volumes` | Mounts persistent storage |
+| `networks` | Connects services to networks |
+| `depends_on` | Defines service startup dependencies |
+| `volumes:` (root level) | Declares named volumes |
+| `networks:` (root level) | Declares networks |
+
+## Important YAML Rules
+
+1. Use spaces for indentation, not tabs.
+2. Child properties must be indented under their parent.
+3. Use `-` to define list items.
+4. Use `key: value` for key-value pairs.
+5. Use quotes around port mappings, such as `"8080:80"`.
+
+### Docker Compose Commands
+
+| Command | Description |
+|---|---|
+| `docker compose up -d` | Start services in the background |
+| `docker compose down` | Stop and remove containers and networks |
+| `docker compose ps` | List Compose containers |
+| `docker compose logs` | View service logs |
+| `docker compose logs -f` | Follow logs live |
+| `docker compose stop` | Stop services without removing containers |
+| `docker compose start` | Start existing stopped services |
+| `docker compose restart` | Restart services |
+| `docker compose build` | Build service images |
+| `docker compose pull` | Pull service images |
+| `docker compose config` | Validate and render Compose configuration |
+
