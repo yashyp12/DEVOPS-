@@ -1,0 +1,10 @@
+services:
+  backend:
+    image: flask-app
+    
+    depends_on:
+      - database
+    
+  database:
+    
+      image: mysql:8

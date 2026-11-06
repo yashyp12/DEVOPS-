@@ -760,6 +760,7 @@ networks:
 | `depends_on` | Defines service startup dependencies |
 | `volumes:` (root level) | Declares named volumes |
 | `networks:` (root level) | Declares networks |
+| 'healthcheck' | Defines a command to check container health |
 
 ## Important YAML Rules
 
@@ -784,4 +785,27 @@ networks:
 | `docker compose build` | Build service images |
 | `docker compose pull` | Pull service images |
 | `docker compose config` | Validate and render Compose configuration |
+
+
+>>depends_pn : -
+depends_on defines the startup dependency between services. It tells Docker Compose which service should be started before another service.
+
+
+>> healthcheck: -
+A healthcheck periodically runs a command inside a container to determine whether its application is healthy and ready to serve requests.
+
+```bash
+services:
+  database:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: company
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-proot123"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+```
 
