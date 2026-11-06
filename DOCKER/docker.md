@@ -809,3 +809,62 @@ services:
       start_period: 30s
 ```
 
+
+## Docker Compose — Complete Basic Structure
+
+```yaml
+services:
+
+  frontend:
+    image: frontend-image
+    container_name: frontend-container
+    build: ./frontend
+    ports:
+      - "3000:80"
+    environment:
+      APP_ENV: development
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  backend:
+    image: backend-image
+    container_name: backend-container
+    build: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      DB_HOST: database
+      DB_NAME: company
+    depends_on:
+      database:
+        condition: service_healthy
+    networks:
+      - app-network
+
+  database:
+    image: mysql:8
+    container_name: database-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: company
+    volumes:
+      - db-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-proot123"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    networks:
+      - app-network
+
+volumes:
+  db-data:
+
+networks:
+  app-network:
+    driver: bridge
+```
+ 
