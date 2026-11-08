@@ -810,7 +810,7 @@ services:
 ```
 
 
-## Docker Compose — Complete Basic Structure
+## Docker Compose — Structure
 
 ```yaml
 services:
@@ -867,4 +867,28 @@ networks:
   app-network:
     driver: bridge
 ```
+
+```bash
+docker system prune
+> Removes all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes. Use with caution as it can free up disk space but may remove important data if not used carefully.
+```
  
+ ## Docker Registry - 
+
+ > A Docker Registry is a storage and distribution system where Docker images are stored, managed and shared.
+
+### Tag image with name 
+```bash
+docker tag <image_id> <username>/<repository>:<tag>
+docker tag hello-world yashyp12/hello-world:v1
+```
+
+#### docker push image to docker hub
+```bash
+docker push <username>/<repository>:<tag>
+docker push yashyp12/hello-world:v1
+```
+
+
+
+
