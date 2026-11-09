@@ -870,8 +870,9 @@ networks:
 
 ```bash
 docker system prune
-> Removes all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes. Use with caution as it can free up disk space but may remove important data if not used carefully.
 ```
+> Removes all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes. Use with caution as it can free up disk space but may remove important data if not used carefully.
+
  
  ## Docker Registry - 
 
@@ -888,7 +889,5 @@ docker tag hello-world yashyp12/hello-world:v1
 docker push <username>/<repository>:<tag>
 docker push yashyp12/hello-world:v1
 ```
-
-
 
 
