@@ -795,6 +795,13 @@ depends_on defines the startup dependency between services. It tells Docker Comp
 A healthcheck periodically runs a command inside a container to determine whether its application is healthy and ready to serve requests.
 
 ```bash
+docker compose config 
+(validates the docker-compose.yml file and shows the final configuration that will be used to start the services.)  
+```
+
+
+
+```bash
 services:
   database:
     image: mysql:8
