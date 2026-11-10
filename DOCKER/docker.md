@@ -799,6 +799,10 @@ docker compose config
 ( validates, resolves, and renders your final Docker Compose configuration without actually starting or building any containers)  
 ```
 
+```bash
+docker compose up -- build
+( builds images before starting containers)
+```
 
 ```bash
 services:
