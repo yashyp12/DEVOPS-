@@ -796,9 +796,8 @@ A healthcheck periodically runs a command inside a container to determine whethe
 
 ```bash
 docker compose config 
-(validates the docker-compose.yml file and shows the final configuration that will be used to start the services.)  
+( validates, resolves, and renders your final Docker Compose configuration without actually starting or building any containers)  
 ```
-
 
 
 ```bash
