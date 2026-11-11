@@ -676,7 +676,6 @@ docker run -d \
   mysql:8
 ```
 
-
 ### C. Bind Mounts
 
 - Maps an existing host file or directory into a container.
