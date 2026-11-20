@@ -3,7 +3,7 @@
 
 ## 1. What is a Container?
 
-A **container** is an isolated environment in which an application runs along with its required dependencies, libraries and runtime.
+A **container** is an isolated environment in which an application runs along with its required dependencies, libraries and runtim
 
 Containers help applications run consistently across different environments without manually installing all dependencies on each machine.
 
