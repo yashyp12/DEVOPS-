@@ -911,6 +911,10 @@ docker push yashyp12/hello-world:v1
 # Docker init 
 > docker init is a built-in CLI command that automatically creates the Docker configuration files needed to containerize your project.
 
+```bash
+docker init
+```
+
 
 
 
