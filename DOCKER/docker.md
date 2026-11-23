@@ -902,4 +902,15 @@ docker push yashyp12/hello-world:v1
 ```
 
 
+# Docker Scout - 
+> Docker Scout is Docker’s native software supply chain security tool that analyzes container images to detect vulnerabilities and suggest fixes.
+
+> Accessibke via the Docker CLI, it provides insights into the security posture of images, helping developers and DevOps teams maintain secure containerized applications.
+
+
+# Docker init 
+> docker init is a built-in CLI command that automatically creates the Docker configuration files needed to containerize your project.
+
+
+
 
